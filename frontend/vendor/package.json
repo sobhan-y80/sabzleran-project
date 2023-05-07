@@ -1,0 +1,23 @@
+{
+  "name": "sabzlearn-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "HAGHOBATEL",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "animate.css": "^4.1.1",
+    "apexcharts": "^3.40.0",
+    "bootstrap": "^5.2.3",
+    "chart.js": "^4.3.0",
+    "gsap": "^3.6.1",
+    "sweetalert": "^2.1.2",
+    "swiper": "^9.2.0",
+    "vanilla-tilt": "^1.8.0",
+    "zepto": "^1.2.0"
+  }
+}

@@ -1,0 +1,27 @@
+/* .login-form__input-box__password {
+  position: relative;
+}
+
+.login-form__password-progress {
+  z-index: 1;
+  visibility: hidden;
+  content: "";
+  width: 20%;
+  height: 0.2rem;
+  background-color: var(--dangerous);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.login-form__password-progress::after {
+  content: "ضعیف";
+  color: var(--dangerous);
+  position: absolute;
+  top: 1rem;
+  right: 0;
+}
+
+.progress-active .login-form__password-progress {
+  visibility: visible;
+} */

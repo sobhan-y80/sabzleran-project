@@ -1,0 +1,92 @@
+/* Start Animate Title Courses Section */
+
+.animate__animated.animate__flash {
+  --animate-duration: 4000ms;
+}
+/* css/sheared-components/course-section/course-section.css */
+/* Finish Animate Title Courses Section */
+
+/* Start Animate courses header Link Icon Landing */
+
+@keyframes FadeInTransform {
+  from {
+    transform: translateX(0.5rem);
+    opacity: 0.8;
+  }
+  to {
+    transform: translateX(-0.5rem);
+    opacity: 1;
+  }
+}
+
+@keyframes moveUp-down {
+  from {
+    transform: translateY(-0.5rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+/* css/sheared-components/course-section/course-section.css */
+/* Finish Animate courses header Link Icon Landing */
+
+/* Start Animate Footer */
+@keyframes animateShow {
+  0% {
+    transform: translateY(180vh) scale(0) rotate(0deg);
+  }
+  20% {
+    transform: translateY(100vh) scale(1) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-50vh) scale(0.5) rotate(360deg);
+  }
+}
+
+/* css/sheared-components/footer/footer.css */
+/* finish Animate Footer */
+
+/* Start Animate TopBar Progress */
+@keyframes fadeInn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animaDot {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(calc((3.6deg * var(--perecnt-number))));
+  }
+}
+/* css/product.css */
+/* Finish Animate TopBar Progress */
+
+/* Start Animate Login Page */
+@keyframes bring-down {
+  from {
+    top: 0;
+    left: -30%;
+  }
+  to {
+    top: -60%;
+    left: -30%;
+  }
+}
+
+@keyframes bring-top {
+  from {
+    bottom: 0;
+    right: -30%;
+  }
+  to {
+    bottom: -60%;
+    right: -30%;
+  }
+}
+/* css/login.css */
+/* Finish Animate Login Page */

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Start Src Css -->
+
+    <link
+      rel="stylesheet"
+      href="./vendor/node_modules/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./vendor/node_modules/@fortawesome/fontawesome-free/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./vendor/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="vendor/node_modules/animate.css/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/loader/loader.css" />
+    <link rel="stylesheet" href="css/defualt.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/register.css" />
+
+    <!-- Finish Src Css -->
+
+    <title>صفحه ورود | سبزلرن</title>
+  </head>
+  <body>
+    <!-- Start LOADER -->
+    <div class="loader-wrapper">
+      <div class="loader__banter">
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+      </div>
+    </div>
+    <!-- Finish Loader -->
+
+    <!-- Start Header -->
+    <header class="header">
+      <div class="top-bar">
+        <div class="conatiner-fluid">
+          <div class="top-bar__content">
+            <div
+              class="top-bar__right animate__animated animate__fadeInRightBig"
+            >
+              <ul id="top-bar__course-menu" class="top-bar__menu"></ul>
+            </div>
+            <div class="top-bar__left animate__animated animate__fadeInLeftBig">
+              <div class="top-bar__email">
+                <a
+                  title="email"
+                  href=""
+                  class="top-bar__email-text top-bar__link"
+                >
+                  soobhanybi@gmail.com
+                </a>
+              </div>
+              <div class="top-bar__social-media">
+                <ul class="top-bar__social-media-menu">
+                  <li class="top-bar__item">
+                    <a
+                      title="instagram"
+                      href="#instagram"
+                      class="top-bar__social-link-icon top-bar__link"
+                    >
+                      <i class="fa-brands fa-instagram top-bar__instagram-icon">
+                      </i>
+                    </a>
+                  </li>
+                  <li class="top-bar__item">
+                    <a
+                      title="telegram"
+                      href="#telegram"
+                      class="top-bar__social-link-icon top-bar__link"
+                    >
+                      <i class="fa-brands fa-telegram top-bar__telegram-icon">
+                      </i>
+                    </a>
+                  </li>
+                  <li class="top-bar__item">
+                    <a
+                      title="youtube"
+                      href="#youtube"
+                      class="top-bar__social-link-icon top-bar__link"
+                    >
+                      <i class="fa-brands fa-youtube top-bar__youtube-icon">
+                      </i>
+                    </a>
+                  </li>
+                  <li class="top-bar__item">
+                    <a
+                      title="twitter"
+                      href="#twitter"
+                      class="top-bar__social-link-icon top-bar__link"
+                    >
+                      <i class="fa-brands fa-twitter top-bar__twitter-icon">
+                      </i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-header">
+        <div class="container-fluid">
+          <div class="main-header__content">
+            <div class="main-header__mobile-menu">
+              <li id="main-header__mobile-menu-btn" class="main-header__item">
+                <a href="#" class="main-header__link">
+                  <i class="fa-solid fa-bars main-header__menu-small-icon"></i>
+                </a>
+                <div class="mobile-menu__dropdown-wrapper">
+                  <button
+                    id="closeDropDownBtn"
+                    title="close"
+                    class="mobile-menu__close-dropdown d-flex align-items-center"
+                  >
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                  <ul class="mobile-menu__dropdown">
+                    <li class="main-header__item">
+                      <div class="mobile-menu__searchbar global__searchbar">
+                        <input
+                          type="text"
+                          class="main-header___search-input global__search-input"
+                          placeholder="جستجو..."
+                        />
+                        <button
+                          class="main-header__search-btn global__search-btn"
+                        >
+                          <i
+                            class="fa-solid fa-magnifying-glass main-header__serach-icon global__search-icon"
+                          ></i>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="main-header__item">
+                      <a href="#" class="main-header__link">فرانت اند</a>
+                    </li>
+                    <li class="main-header__item">
+                      <a href="#" class="main-header__link">امنیت</a>
+                    </li>
+                    <li class="main-header__item">
+                      <a href="#" class="main-header__link"> مقالات </a>
+                    </li>
+                    <li class="main-header__item">
+                      <a href="#" class="main-header__link">پایتون</a>
+                    </li>
+                    <li class="main-header__item">
+                      <a href="#" class="main-header__link">مهارت های نرم</a>
+                    </li>
+                    <li class="main-header__item">
+                      <a href="#" class="main-header__link">فروشگاه</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </div>
+            <div
+              class="main-header__right animate__animated animate__fadeInRightBig"
+            >
+              <div class="main-header__logo">
+                <div class="header-main__logo-text-wrapper">
+                  <span class="header-main__logo-text">L</span
+                  ><span class="header-main__logo-text">E</span
+                  ><span class="header-main__logo-text">G</span
+                  ><span class="header-main__logo-text">O</span>
+                </div>
+              </div>
+              <ul
+                id="menu__wrapper"
+                class="main-header__menu main-header__course-menu"
+              ></ul>
+              <div class="main-header__search-wrapper">
+                <div
+                  id="main-header__searchbar"
+                  class="main-header__searchbar global__searchbar"
+                >
+                  <input
+                    type="text"
+                    id="main-header__search-input"
+                    class="main-header___search-input global__search-input"
+                    placeholder="جستجو..."
+                  />
+                  <button class="main-header__search-btn global__search-btn">
+                    <i
+                      class="fa-solid fa-magnifying-glass main-header__serach-icon global__search-icon"
+                    ></i>
+                  </button>
+                </div>
+                <div
+                  id="auto-search-box"
+                  class="main-header___auto-search-box"
+                ></div>
+              </div>
+            </div>
+            <div
+              class="main-header__left animate__animated animate__fadeInLeftBig"
+            >
+              <ul class="main-header__menu">
+                <li class="main-header__item">
+                  <a
+                    href="#"
+                    id="header__profile"
+                    class="main-header__link main-header__profile"
+                  >
+                  </a>
+                </li>
+                <li class="main-header__item">
+                  <a
+                    href="#"
+                    class="main-header__link main-header__cart-shopping"
+                  >
+                    <div class="main-header__icon-wrapper">
+                      <i
+                        class="fa-solid fa-wallet main-header__cart-shop-icon"
+                      ></i>
+                    </div>
+                    <ul class="main-header__dropdown">
+                      <li class="main-header__item">
+                        محصولی در سبد خرید موجود نیست
+                      </li>
+                    </ul>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Finish Header -->
+
+    <!-- Start Main -->
+    <div class="main">
+      <!-- Start Animation Shape -->
+      <div class="animation-shape">
+        <div class="animation-shape__circle"></div>
+        <div class="animation-shape__circle"></div>
+      </div>
+      <!-- Finsih Animation Shape -->
+
+      <!-- Start Login User  -->
+      <div class="login-form hpc__section w-100">
+        <div class="container d-flex justify-content-center">
+          <div class="login-form__box">
+            <div class="login-form__title-wrapper">
+              <h2 class="login-form__title">ثبت نام</h2>
+              <h4 class="login-form__subtitle">
+                خوش اومدی
+                <br />
+                از اینکه به جمعمون میپیوندی خوشحالیم :))
+              </h4>
+            </div>
+            <div class="login-form__change-form-stutus">
+              <span class="login-form__change-form-stutus-text">
+                قبلا اکانت ساختی !!؟
+              </span>
+              <a
+                href="login.html"
+                class="login-form__change-form-stutus-link hpc__popular"
+              >
+                ورود
+              </a>
+            </div>
+            <div class="login-form__box-inputs">
+              <!-- Start Name -->
+              <div class="login-form__input-box">
+                <input
+                  id="login-form__name-input"
+                  type="text"
+                  class="input-box__input"
+                  value=""
+                  autocomplete="off"
+                />
+                <span class="input-box__placeholder"
+                  >نام
+                  <span style="color: #ffffff99; padding-inline: 0.5rem"
+                    >و</span
+                  >
+                  نام خانوادگی
+                </span>
+                <i class="input-box__shape"></i>
+              </div>
+              <!-- Finish Name -->
+
+              <!-- Start Username -->
+              <div class="login-form__input-box">
+                <input
+                  id="login-form__username-input"
+                  type="text"
+                  class="input-box__input"
+                  value=""
+                  autocomplete="off"
+                />
+                <span class="input-box__placeholder">نام کاربری</span>
+                <i class="input-box__shape"></i>
+              </div>
+              <!-- Finish Username -->
+
+              <!-- Start Email -->
+              <div class="login-form__input-box">
+                <input
+                  id="login-form__email-input"
+                  type="email"
+                  class="input-box__input"
+                  value=""
+                  autocomplete="off"
+                />
+                <span class="input-box__placeholder"> ایمیل </span>
+                <i class="input-box__shape"></i>
+              </div>
+              <!-- Finish Email -->
+
+              <!-- Start Phone Number -->
+              <div class="login-form__input-box">
+                <input
+                  id="login-form__phone-input"
+                  type="text"
+                  class="input-box__input"
+                  value=""
+                  autocomplete="off"
+                />
+                <span class="input-box__placeholder"> شماره تلفن </span>
+                <i class="input-box__shape"></i>
+              </div>
+              <!-- Finish Phone Number -->
+
+              <!-- Start Password -->
+              <div
+                class="login-form__input-box login-form__input-box__password"
+              >
+                <div class="login-form__password-progress"></div>
+                <input
+                  id="login-form__password-input"
+                  type="password"
+                  class="input-box__input"
+                  value=""
+                  autocomplete="off"
+                />
+                <button class="password-box__btn">
+                  <img
+                    id="password-login__icon"
+                    src="images/login/eye-close.svg"
+                    class="password-box__svg"
+                    alt=""
+                  />
+                </button>
+                <span class="input-box__placeholder">رمز عبور</span>
+                <i class="input-box__shape"></i>
+              </div>
+
+              <!-- Finish Password -->
+            </div>
+            <div class="login-form__password-setting">
+              <div class="login-form__password-remember-me">
+                <input
+                  id="login-form__remember-me-password"
+                  type="checkbox"
+                  class="login-form__remember-me-input"
+                />
+                <label
+                  for="login-form__remember-me-password"
+                  class="login-form__remember-me-label animate__animated animate__flash animate__infinite"
+                  >من را به خاطر داشته باش</label
+                >
+              </div>
+            </div>
+            <button class="login-form__submit" id="register-btn">
+              ثبت نام
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Finish Login User  -->
+    </div>
+    <!-- Finish Main -->
+
+    <!-- Start Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="footer__desc">
+          <div class="row">
+            <div class="col-12">
+              <h4 class="footer__desc-title hpc__title">
+                ضمانت سبز لرن برای کلیه محصولات آموزشی
+              </h4>
+              <p class="footer__desc-text">
+                وقتی تازه شروع به یادگیری برنامه نویسی کردم. یکی از مشکلاتی که
+                در فرآیند یادگیری داشتم، کمبود آموزش های خوب با پشتیبانی قابل
+                قبول بود که باعث شد اون موقع تصمیم بگیرم اگر روزی توانایی مالی و
+                فنی قابل قبولی داشتم یک وب سایت برای حل این مشکل راه اندازی کنم!
+                و خب امروز آکادمی آموزش برنامه نویسی سبزلرن به عنوان یک آکادمی
+                خصوصی فعالیت میکنه و این به این معنی هست که هر مدرسی اجازه تدریس
+                در اون رو نداره و باید از فیلترینگ های خاص آکادمی سبزلرن رد شه!
+                این به این معنی هست که ما برامون فن بیان و نحوه تعامل مدرس با
+                دانشجو بسیار مهمه! ما در آکادمی سبزلرن تضمین پشتیبانی خوب و با
+                کیفیت رو به شما میدیم . چرا که مدرسین وب سایت سبزلرن حتی برای
+                پشتیبانی دوره های رایگان شون هم هزینه دریافت میکنند و متعهد
+                هستند که هوای کاربر های عزیز رو داشته باشند
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer__widget">
+          <div class="row">
+            <div class="col-sm-12 col-lg-3 footer-widget__quick-access">
+              <div class="row">
+                <div class="col-6">
+                  <div class="footer__widget-item">
+                    <a href="#">
+                      فروشگاه
+                      <span class="hpc__popular">محبوب</span>
+                    </a>
+                  </div>
+                  <div class="footer__widget-item">
+                    <a href="#"> ارتباط با ما </a>
+                  </div>
+                  <div class="footer__widget-item">
+                    <a href="#"> دربـــاره ما </a>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="footer__widget-item">
+                    <a class="footer-widget__link" href="#"> مقالات</a>
+                  </div>
+                  <div class="footer__widget-item">
+                    <a class="footer-widget__link" href="#">
+                      قوانین و مقررات
+                    </a>
+                  </div>
+                  <div class="footer__widget-item">
+                    <a class="footer-widget__link" href="#"
+                      >پایتون
+                      <span class="hpc__new">جدید</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-3 footer-widget__working-hours">
+              <h3 class="footer-widget__title">ساعات کاری</h3>
+              <div class="footer-widget__text">
+                <p class="row">شنبه تا چهارشنبه 8 صبح تا 18 عصر</p>
+                <p class="row">پنج شنبه‌ها ساعت 8 صبح تا 12 ظهر</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 footer-widget__contact-us">
+              <h3 class="footer-widget__title">ارتباط با ما</h3>
+              <div class="footer-widget__text">
+                <div class="row">
+                  <span class="footer-widget-email-name col-4"> ایمیل </span>
+                  <span class="footer-widget-email-adress col-8">
+                    <a href="#" class=""> soobhanybi@gmail.com </a>
+                  </span>
+                </div>
+                <div class="row">
+                  <span class="footer-widget-phone-name col-4"
+                    >شماره همراه</span
+                  >
+                  <span class="footer-widget-phone-number col-8"
+                    >09396007232</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 footer-widget__trust-symbol">
+              <div class="footer-widget__namda-box">
+                <a
+                  class="footer-widget__link"
+                  href="https://trustseal.enamad.ir/?id=274698&code=HYeEYWQTRWrm1YcxgLhn"
+                >
+                  <img src="images/namad/enamad-two-star.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row footer__copyright">
+          <p>
+            این قالب صرفا جهت نمونه کار است و از سایت
+            <a href="https://sabzlearn.ir/" class="footer__link hpc__popular"
+              >سبزلرن</a
+            >
+            میباشد
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Finish Footer -->
+    <!-- Start Script SRC -->
+    <script
+      defer
+      src="vendor/node_modules/@fortawesome/fontawesome-free/js/all.min.js"
+    ></script>
+    <script
+      defer
+      src="vendor/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script src="vendor/node_modules/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./js/loader.js"></script>
+
+    <script src="js/shared.js" type="module"></script>
+    <script defer src="./js/shared-form.js" type="module"></script>
+    <script defer src="./js/register.js" type="module"></script>
+
+    <!-- Finish Script SRC -->
+  </body>
+</html>

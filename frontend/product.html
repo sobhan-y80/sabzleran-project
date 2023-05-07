@@ -1,0 +1,1845 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Start Src Css -->
+    <link
+      rel="stylesheet"
+      href="./vendor/node_modules/swiper/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./vendor/node_modules/@fortawesome/fontawesome-free/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./vendor/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="vendor/node_modules/animate.css/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="./css/loader/loader.css" />
+    <link rel="stylesheet" href="css/defualt.css" />
+    <link rel="stylesheet" href="css/product.css" />
+    <!-- Finish Src Css -->
+
+    <title>محصولات | متخصص ریداکس</title>
+  </head>
+  <body>
+    <!-- Start LOADER -->
+    <div class="loader-wrapper">
+      <div class="loader__banter">
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+      </div>
+    </div>
+    <!-- Finish Loader -->
+
+    <!-- Start Header -->
+    <header class="header">
+      <div class="top-bar">
+        <div class="conatiner-fluid">
+          <div class="top-bar__content">
+            <div
+              class="top-bar__right animate__animated animate__fadeInRightBig"
+            >
+              <ul id="top-bar__course-menu" class="top-bar__menu"></ul>
+            </div>
+            <div class="top-bar__left animate__animated animate__fadeInLeftBig">
+              <div class="top-bar__email">
+                <a
+                  title="email"
+                  href=""
+                  class="top-bar__email-text top-bar__link"
+                >
+                  soobhanybi@gmail.com
+                </a>
+              </div>
+              <div class="top-bar__social-media">
+                <ul class="top-bar__social-media-menu">
+                  <li class="top-bar__item">
+                    <a
+                      title="instagram"
+                      href="#instagram"
+                      class="top-bar__social-link-icon top-bar__link"
+                    >
+                      <i class="fa-brands fa-instagram top-bar__instagram-icon">
+                      </i>
+                    </a>
+                  </li>
+                  <li class="top-bar__item">
+                    <a
+                      title="telegram"
+                      href="#telegram"
+                      class="top-bar__social-link-icon top-bar__link"
+                    >
+                      <i class="fa-brands fa-telegram top-bar__telegram-icon">
+                      </i>
+                    </a>
+                  </li>
+                  <li class="top-bar__item">
+                    <a
+                      title="youtube"
+                      href="#youtube"
+                      class="top-bar__social-link-icon top-bar__link"
+                    >
+                      <i class="fa-brands fa-youtube top-bar__youtube-icon">
+                      </i>
+                    </a>
+                  </li>
+                  <li class="top-bar__item">
+                    <a
+                      title="twitter"
+                      href="#twitter"
+                      class="top-bar__social-link-icon top-bar__link"
+                    >
+                      <i class="fa-brands fa-twitter top-bar__twitter-icon">
+                      </i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-header">
+        <div class="container-fluid">
+          <div class="main-header__content">
+            <div class="main-header__mobile-menu">
+              <li id="main-header__mobile-menu-btn" class="main-header__item">
+                <a href="#" class="main-header__link">
+                  <i class="fa-solid fa-bars main-header__menu-small-icon"></i>
+                </a>
+                <div class="mobile-menu__dropdown-wrapper">
+                  <button
+                    id="closeDropDownBtn"
+                    title="close"
+                    class="mobile-menu__close-dropdown d-flex align-items-center"
+                  >
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                  <ul class="mobile-menu__dropdown">
+                    <li class="main-header__item">
+                      <div class="mobile-menu__searchbar global__searchbar">
+                        <input
+                          type="text"
+                          class="main-header___search-input global__search-input"
+                          placeholder="جستجو..."
+                        />
+                        <button
+                          class="main-header__search-btn global__search-btn"
+                        >
+                          <i
+                            class="fa-solid fa-magnifying-glass main-header__serach-icon global__search-icon"
+                          ></i>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="main-header__item">
+                      <a href="#" class="main-header__link">فرانت اند</a>
+                    </li>
+                    <li class="main-header__item">
+                      <a href="#" class="main-header__link">امنیت</a>
+                    </li>
+                    <li class="main-header__item">
+                      <a href="#" class="main-header__link"> مقالات </a>
+                    </li>
+                    <li class="main-header__item">
+                      <a href="#" class="main-header__link">پایتون</a>
+                    </li>
+                    <li class="main-header__item">
+                      <a href="#" class="main-header__link">مهارت های نرم</a>
+                    </li>
+                    <li class="main-header__item">
+                      <a href="#" class="main-header__link">فروشگاه</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </div>
+            <div
+              class="main-header__right animate__animated animate__fadeInRightBig"
+            >
+              <div class="main-header__logo">
+                <div class="header-main__logo-text-wrapper">
+                  <span class="header-main__logo-text">L</span
+                  ><span class="header-main__logo-text">E</span
+                  ><span class="header-main__logo-text">G</span
+                  ><span class="header-main__logo-text">O</span>
+                </div>
+              </div>
+              <ul
+                id="menu__wrapper"
+                class="main-header__menu main-header__course-menu"
+              ></ul>
+              <div class="main-header__search-wrapper">
+                <div
+                  id="main-header__searchbar"
+                  class="main-header__searchbar global__searchbar"
+                >
+                  <input
+                    type="text"
+                    id="main-header__search-input"
+                    class="main-header___search-input global__search-input"
+                    placeholder="جستجو..."
+                  />
+                  <button class="main-header__search-btn global__search-btn">
+                    <i
+                      class="fa-solid fa-magnifying-glass main-header__serach-icon global__search-icon"
+                    ></i>
+                  </button>
+                </div>
+                <div
+                  id="auto-search-box"
+                  class="main-header___auto-search-box"
+                ></div>
+              </div>
+            </div>
+            <div
+              class="main-header__left animate__animated animate__fadeInLeftBig"
+            >
+              <ul class="main-header__menu">
+                <li class="main-header__item">
+                  <a
+                    href="#"
+                    id="header__profile"
+                    class="main-header__link main-header__profile"
+                  >
+                  </a>
+                </li>
+                <li class="main-header__item">
+                  <a
+                    href="#"
+                    class="main-header__link main-header__cart-shopping"
+                  >
+                    <div class="main-header__icon-wrapper">
+                      <i
+                        class="fa-solid fa-wallet main-header__cart-shop-icon"
+                      ></i>
+                    </div>
+                    <ul class="main-header__dropdown">
+                      <li class="main-header__item">
+                        محصولی در سبد خرید موجود نیست
+                      </li>
+                    </ul>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Finish Header -->
+
+    <!-- Start Breadcrumb -->
+    <div class="breadcrumb hpc__section">
+      <div class="container">
+        <div class="breadcrumb__contnet d-flex justify-content-lg-between row">
+          <div
+            class="col-12 col-md-7 d-flex justify-content-center justify-content-md-start"
+          >
+            <h2
+              class="breadcrumb__title animate__animated animate__fadeInLeftBig"
+            >
+              آموزش تخصصی Redux مقدماتی تا پیشرفته
+            </h2>
+          </div>
+          <div
+            class="col-12 col-md-5 d-flex justify-content-center justify-content-md-end"
+          >
+            <ul
+              class="breadcrumb__list d-flex align-items-center animate__animated animate__fadeInRightBig"
+            >
+              <li class="breadcrumb__item">
+                <a
+                  href="index.html"
+                  class="breadcrumb__link breadcrumb__link--home"
+                >
+                  خانه
+                </a>
+                <span>/</span>
+              </li>
+              <li class="breadcrumb__item">
+                <a
+                  href="category.html"
+                  class="breadcrumb__link breadcrumb__link--destination"
+                >
+                  آموزش برنامه نویسی فرانت اند
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Finish Breadcrumb -->
+
+    <!-- Start Course Main Info -->
+    <div class="course-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6 my-4 my-lg-0">
+            <div
+              class="course-info__video-wrapper animate__animated animate__backInRight"
+            >
+              <video
+                height="auto"
+                src=""
+                class="course-info__video"
+                poster="images/courses/sabz-redux.png"
+                controls
+              ></video>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 my-4 my-lg-0">
+            <div
+              class="course-info__contnet animate__animated animate__backInLeft"
+            >
+              <div
+                class="course-info__price-wrapper d-flex justify-content-center"
+              >
+                <span class="course-info__price hpc__off">
+                  <span class="course-info__price-number">5,000,000</span>
+                  <span class="course-info__price-text">تومان</span>
+                </span>
+                <span class="course-info__price-amount">
+                  <span class="course-info__price-amount-number">
+                    1,000,000
+                  </span>
+                  <span class="course-info__price-amount-text"> تومان </span>
+                </span>
+              </div>
+              <div class="course-info__category-wrapper d-flex">
+                <span class="course-info__category-name">دسته:</span>
+                <ul class="course-info__category-list">
+                  <li class="course-info__category-item hpc__category-item">
+                    <a href="#" class="course-info__link"
+                      >آموزش برنامه نویسی فرانت اند</a
+                    >
+                  </li>
+                  <li class="course-info__category-item hpc__category-item">
+                    <a href="#" class="course-info__link">فرانت - تخفیف</a>
+                  </li>
+                  <li class="course-info__category-item hpc__category-item">
+                    <a href="#" class="course-info__link">فریمورک</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="course-info__desc-wrapper">
+                <!-- Start Warn Text -->
+                <p class="course-info__desc-warn">
+                  پس از خرید، بلافاصله به محتوای دوره دسترسی خواهید داشت و
+                  میتوانید دوره را مشاهده و یا دانلود کنید.
+                </p>
+                <!-- Finish Warn Text -->
+              </div>
+              <div class="course-info__course-status-btn row">
+                <!-- Start button About teachs -->
+                <div class="course-info__seeing-product-contnet col-4">
+                  <a
+                    href="#topic"
+                    class="course-info__seeing-product-btn course-info__link course-info__link--active"
+                  >
+                    <!-- <span class="course-info__!buyed">مشاهده دروس</span> -->
+                    <span class="course-info__buyed">استارت بزن</span>
+                  </a>
+                </div>
+                <!-- Finish button About teachs -->
+                <!-- Start button About Membership Status -->
+                <div class="course-info__buying-product-contnet col-8">
+                  <a
+                    href="#"
+                    class="course-info__buying-product-btn course-info__link"
+                  >
+                    <!-- <span class="course-info__!buyed">خرید دوره</span> -->
+                    <span class="course-info__buyed">دانشجو دوره هستید</span>
+                  </a>
+                </div>
+                <!-- Finish button About Membership Status -->
+              </div>
+              <div class="course-info__social d-flex justify-content-between">
+                <!-- Start Social Right -->
+                <div
+                  class="course-info__social-right d-flex align-items-center"
+                >
+                  <!-- Start Course Score -->
+                  <ul class="course-info__score-list d-flex">
+                    <li class="course-info__score-item">
+                      <img
+                        width="15rem"
+                        src="images/social/star.svg"
+                        alt="score"
+                        class="course-info__score-svg"
+                      />
+                    </li>
+                    <li class="course-info__score-item">
+                      <img
+                        width="15rem"
+                        src="images/social/star.svg"
+                        alt="score"
+                        class="course-info__score-svg"
+                      />
+                    </li>
+                    <li class="course-info__score-item">
+                      <img
+                        width="15rem"
+                        src="images/social/star.svg"
+                        alt="score"
+                        class="course-info__score-svg"
+                      />
+                    </li>
+                    <li class="course-info__score-item">
+                      <img
+                        width="15rem"
+                        src="images/social/star.svg"
+                        alt="score"
+                        class="course-info__score-svg"
+                      />
+                    </li>
+                    <li class="course-info__score-item">
+                      <img
+                        width="15rem"
+                        src="images/social/star.svg"
+                        alt="score"
+                        class="course-info__score-svg"
+                      />
+                    </li>
+                  </ul>
+                  <!-- Finish Course Score -->
+                  <!-- Start Course Comments  -->
+                  <div class="course-info__comments">
+                    <a href="#" class="course-info__comment-link">
+                      <span
+                        class="course-info__number-of-comments hpc__highlight"
+                        >1,100</span
+                      >
+                      <span class="course-info__comment-name">کامنت</span>
+                    </a>
+                  </div>
+                  <!-- Finish Course Comments  -->
+                  <span class="hpc__slash">/</span>
+                  <!-- Start Course Visit -->
+                  <div class="course-info__visit">
+                    <span class="course-info__visit-number hpc__highlight"
+                      >11,200</span
+                    >
+                    <span class="course-info__visit-name">بازدید</span>
+                  </div>
+                  <!-- Finish Course Visit -->
+                </div>
+                <!-- Finsih Social Right -->
+                <!-- Start Social Left -->
+                <div class="course-info__social-left">
+                  <!-- Start Social Media Links -->
+                  <ul class="course-info__social-media-list">
+                    <li class="course-info__social-media-item">
+                      <a
+                        href=""
+                        title="instagram"
+                        class="course-info__social-media-link"
+                      >
+                        <img
+                          width="25px"
+                          src="images/social/instagram.svg"
+                          alt="instagram"
+                        />
+                      </a>
+                    </li>
+                    <li class="course-info__social-media-item">
+                      <a
+                        href=""
+                        title="telegram"
+                        class="course-info__social-media-link"
+                      >
+                        <img
+                          width="25px"
+                          src="images/social/telegram.svg"
+                          alt="telegram"
+                        />
+                      </a>
+                    </li>
+                    <li class="course-info__social-media-item">
+                      <a
+                        href=""
+                        title="linkedin"
+                        class="course-info__social-media-link"
+                      >
+                        <img
+                          width="25px"
+                          src="images/social/linkedin.svg"
+                          alt="linkedin"
+                        />
+                      </a>
+                    </li>
+                    <li class="course-info__social-media-item">
+                      <a
+                        href=""
+                        title="twitter"
+                        class="course-info__social-media-link"
+                      >
+                        <img
+                          width="25px"
+                          src="images/social/twitter.svg"
+                          alt="twitter"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- Finish Social Media Links -->
+                </div>
+                <!-- Finsih Social Left -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Finish Course Main Info -->
+
+    <!-- Start Main Info -->
+    <div class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="course">
+              <div class="row">
+                <!-- Start Course Box -->
+                <div class="course__boxes">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="row">
+                        <div class="col-6 col-md-3 my-3">
+                          <div class="course-boxes__box">
+                            <div class="course-boxes__box-right">
+                              <img
+                                width="100%"
+                                src="images/product-svg/chalkboard-teacher.svg"
+                                alt="courses-box"
+                                class="course-boxes__box-right-svg"
+                              />
+                            </div>
+                            <div class="course-boxes__box-left">
+                              <span
+                                class="course-boxes__box-left-title hpc__title"
+                                >مدرس :
+                              </span>
+                              <span class="course-boxes__box-left-subtitle"
+                                >محمد امین سعیدی راد
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-3 my-3">
+                          <div class="course-boxes__box">
+                            <div class="course-boxes__box-right">
+                              <img
+                                width="100%"
+                                src="images/product-svg/student.svg"
+                                alt="courses-box"
+                                class="course-boxes__box-right-svg"
+                              />
+                            </div>
+                            <div class="course-boxes__box-left">
+                              <span
+                                class="course-boxes__box-left-title hpc__title"
+                                >تعداد دانشجو:
+                              </span>
+                              <span class="course-boxes__box-left-subtitle"
+                                >30,000</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-3 my-3">
+                          <div class="course-boxes__box">
+                            <div class="course-boxes__box-right">
+                              <img
+                                width="100%"
+                                src="images/product-svg/status-up.svg"
+                                alt="courses-box"
+                                class="course-boxes__box-right-svg"
+                              />
+                            </div>
+                            <div class="course-boxes__box-left">
+                              <span
+                                class="course-boxes__box-left-title hpc__title"
+                                >وضعیت دوره :
+                              </span>
+                              <span class="course-boxes__box-left-subtitle"
+                                >به اتمام رسیده</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-3 my-3">
+                          <div class="course-boxes__box">
+                            <div class="course-boxes__box-right">
+                              <img
+                                width="100%"
+                                src="images/product-svg/clock.svg"
+                                alt="courses-box"
+                                class="course-boxes__box-right-svg"
+                              />
+                            </div>
+                            <div class="course-boxes__box-left">
+                              <span
+                                class="course-boxes__box-left-title hpc__title"
+                              >
+                                زمان دوره :
+                              </span>
+                              <span class="course-boxes__box-left-subtitle">
+                                <span
+                                  class="course-boxes__box-left-subtitle-number"
+                                >
+                                  40
+                                </span>
+                                <span
+                                  class="course-boxes__box-left-subtitle-text"
+                                >
+                                  ساعت
+                                </span>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-3 my-3">
+                          <div class="course-boxes__box">
+                            <div class="course-boxes__box-right">
+                              <img
+                                width="100%"
+                                src="images/product-svg/event-calender-date-note.svg"
+                                alt="courses-box"
+                                class="course-boxes__box-right-svg"
+                              />
+                            </div>
+                            <div class="course-boxes__box-left">
+                              <span
+                                class="course-boxes__box-left-title hpc__title"
+                                >آخرین بروزرسانی :
+                              </span>
+                              <span class="course-boxes__box-left-subtitle"
+                                >1401/02/03</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-3 my-3">
+                          <div class="course-boxes__box">
+                            <div class="course-boxes__box-right">
+                              <img
+                                width="100%"
+                                src="images/product-svg/support-music-listen-headphone.svg"
+                                alt="courses-box"
+                                class="course-boxes__box-right-svg"
+                              />
+                            </div>
+                            <div class="course-boxes__box-left">
+                              <span
+                                class="course-boxes__box-left-title hpc__title"
+                                >روش پشتیبانی
+                              </span>
+                              <span class="course-boxes__box-left-subtitle"
+                                >آنلاین</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-3 my-3">
+                          <div class="course-boxes__box">
+                            <div class="course-boxes__box-right">
+                              <img
+                                width="100%"
+                                src="images/product-svg/light-bulb.svg"
+                                alt="courses-box"
+                                class="course-boxes__box-right-svg"
+                              />
+                            </div>
+                            <div class="course-boxes__box-left">
+                              <div
+                                class="course-boxes__box-left-title hpc__title"
+                              >
+                                پیش نیاز :
+                              </div>
+                              <div class="course-boxes__box-left-subtitle">
+                                <span>Html</span>
+                                <span>Css</span>
+                                <span>Js</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-3 my-3">
+                          <div class="course-boxes__box">
+                            <div class="course-boxes__box-right">
+                              <img
+                                width="100%"
+                                src="images/product-svg/play-cricle.svg"
+                                alt="courses-box"
+                                class="course-boxes__box-right-svg"
+                              />
+                            </div>
+                            <div class="course-boxes__box-left">
+                              <span
+                                class="course-boxes__box-left-title hpc__title"
+                                >روش آموزش:
+                              </span>
+                              <span class="course-boxes__box-left-subtitle"
+                                >ظبط شده / آنلاین</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="course__desc-contnet">
+                        <p class="course__desc py-4">
+                          امروزه کتابخانه‌ها کد نویسی را خیلی آسان و لذت بخش تر
+                          کرده اند. به قدری که حتی امروزه هیچ شرکت برنامه نویسی
+                          پروژه های خود را با Vanilla Js پیاده سازی نمی کند و
+                          همیشه از کتابخانه ها و فریمورک های موجود استفاده می
+                          کند. پس شما هم اگه میخواید یک برنامه نویس عالی فرانت
+                          اند باشید، باید کتابخانه های کاربردی که در بازار کار
+                          استفاده می شوند را به خوبی بلد باشید
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <!-- Start Progress Bar -->
+                    <div class="col-12 col-md-4 mb-4 mb-md-0">
+                      <div class="course-progress">
+                        <div class="course-progress__header">
+                          <h3
+                            class="course-progress__title-contnet d-flex align-items-center"
+                          >
+                            <img
+                              src="images/product-svg/time-progress.svg"
+                              alt=""
+                              class="course-progress__title-svg"
+                            />
+                            <span class="course-progress__title-text">
+                              درصد پیشرفت شما :
+                            </span>
+                          </h3>
+                        </div>
+                        <div class="course-progress__bar">
+                          <div class="course-progress__perecnt">
+                            <div class="course-progress__dot"></div>
+                            <svg class="course-progress__svg">
+                              <circle
+                                class="course-progress__circle"
+                                cx="70"
+                                cy="70"
+                                r="70"
+                              ></circle>
+                              <circle
+                                class="course-progress__circle"
+                                cx="70"
+                                cy="70"
+                                r="70"
+                              ></circle>
+                            </svg>
+                            <div class="course-progress__number">
+                              <h2>95<span>%</span></h2>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Finish Progress Bar -->
+                    <!-- Start More Product -->
+                    <div class="col-12 col-md-8">
+                      <div class="more-product">
+                        <div class="row">
+                          <h3 class="more-product__title">محصولات مرتبط</h3>
+                        </div>
+                        <div class="row">
+                          <div class="col-12 col-md-4 my-3 my-md-0">
+                            <a href="#pr" class="more-product__link">
+                              <div class="more-product__img-wrapper">
+                                <img
+                                  src="images/courses/TypeScript.jpg"
+                                  alt="more-product"
+                                  class="more-product__img"
+                                />
+                              </div>
+                              <div class="more-product__content">
+                                <span class="more-prodcut__product-title">
+                                  آموزش typeScript
+                                </span>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-12 col-md-4 my-3 my-md-0">
+                            <a href="#pr" class="more-product__link">
+                              <div class="more-product__img-wrapper">
+                                <img
+                                  src="images/courses/next-js.png"
+                                  alt="more-product"
+                                  class="more-product__img"
+                                />
+                              </div>
+                              <div class="more-product__content">
+                                <span class="more-prodcut__product-title">
+                                  آموزش next js
+                                </span>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-12 col-md-4 my-3 my-md-0">
+                            <a href="#pr" class="more-product__link">
+                              <div class="more-product__img-wrapper">
+                                <img
+                                  src="images/courses/node-js.jpg"
+                                  alt="more-product"
+                                  class="more-product__img"
+                                />
+                              </div>
+                              <div class="more-product__content">
+                                <span class="more-prodcut__product-title">
+                                  آموزش node js
+                                </span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Finish More Product -->
+                  </div>
+                </div>
+                <!-- Finish Course Box -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Finish Main Info -->
+
+    <!-- Start Introduction  -->
+    <div class="introduction">
+      <div class="container">
+        <div class="introduction__list">
+          <div class="introduction-item">
+            <h3 class="introduction-item__title hpc__title">
+              فریم ورک Redux چیست؟
+            </h3>
+            <div class="introduction-item__img-wrapper">
+              <img
+                src="images/product-svg/product-introduction/redux-cover-3.webp"
+                alt="introduction img"
+                class="introduction-item__img img-fluid"
+              />
+            </div>
+            <p class="introduction-item__text hpc__paragrapg">
+              Redux یک کتابخانه جاواسکریپت است که برای ساخت رابط کاربری
+              اپلیکیشن‌ها و صفحات وب استفاده می‌شود. این کتابخانه حالات (states)
+              مختلف را در برنامه‌های جاوا اسکریپت مدیریت می‌کند. حالا منظور از
+              state چیست؟ همانطور که می‌ دانید برنامه‌های کامپیوتری داده‌های خود
+              را در متغیرها ذخیره می‌کنند که هر متغیر مقداری از فضا در حافظه
+              کامپیوتر (RAM) را اشغال به خود اختصاص می‌دهد. به محتوای آن بخش از
+              حافظه، زمانی که نرم افزار در حال اجرا است، وضعیت برنامه نامیده
+              می‌شود. با شناخت State می‌توانیم Redux را بهتر درک کنیم.
+            </p>
+            <p class="introduction-item__text hpc__paragrapg">
+              ریداکس یک الگو برای مدیریت بهتر و بهینه‌تر وضعیت‌های مختلف در
+              برنامه ارائه می‌دهد. این کتابخانه سن زیادی ندارد و در سال 2015
+              عرضه شده است. از Redux بیشتر به عنوان یک مکمل در کنار
+              کتابخانه‌هایی مانند Angular یا React استفاده می‌شود. این کتابخانه
+              با تمام وابستگی‌های خود (Dependency) تنها 2 کیلوبایت حجم دارد و با
+              بکارگیری آن، لازم نیست نگران سنگین شدن پروژه خود باشید. همچنین به
+              خاطر متن باز بودن این پروژه، کدهای آن در گیت هاب موجود است و
+              می‌توانید آن را مطالعه کنید.
+            </p>
+          </div>
+          <div class="introduction-item">
+            <h3 class="introduction-item__title hpc__title">
+              کاربرد فریم ورک Redux چیست؟
+            </h3>
+            <div class="introduction-item__img-wrapper">
+              <img
+                src="images/product-svg/product-introduction/redux-banner.webp"
+                alt="introduction img"
+                class="introduction-item__img img-fluid"
+              />
+            </div>
+            <p class="introduction-item__text hpc__paragrapg">
+              تیم توسعه Redux گفته‌اند که این کتابخانه کوتاه‌ترین یا سریع‌ترین
+              راه برای رسیدن به هدف نیست. آن‌ها پیشنهاد می‌کنند زمانی که در
+              پروژه خود به مشکل برخورد کردید به سراغ این کتابخانه بیایید. اگر
+              نیازی به مدیریت حالات نداشتید استفاده از ریداکس ضرورتی ندارد. زیرا
+              نه تنها مشکل را حل نمی‌کند بلکه کار را سخت‌تر و پیچیده‌تر هم خواهد
+              کرد. اگر با سایر فریم ورک‌های جاوا اسکریپت مانند React کار کرده
+              باشید، می‌دانید که این فریم ورک‌ها خودشان قابلیتی دارند که به کمک
+              آن می‌توانید حالات مختلف را در برنامه مدیریت کنید. توصیه می‌کنیم
+              قبل از یادگیری Redux از همان سیستم‌ها استفاده کنید، چون به احتمال
+              زیاد نیاز شما را برآورده می‌کند و می‌توانید برنامه خود به طور کامل
+              پیاده‌سازی کنید. اما اگر برنامه شما پیچیده است و حین برنامه نویسی
+              به سختی متوجه می‌شوید که حالات کجا ذخیره می‌شوند یا چطور تغییر
+              می‌کنند، ریداکس بهترین کتابخانه موجود است که می‌توانید برای مدیریت
+              States از آن استفاده کنید.
+            </p>
+          </div>
+          <div class="introduction-item">
+            <h3 class="introduction-item__title hpc__title">
+              Redux با کدام زبان‌ها و فریم ورک‌ها سازگار است و مزایای استفاده از
+              آن چیست؟
+            </h3>
+            <div class="introduction-item__img-wrapper">
+              <img
+                src="images/product-svg/product-introduction/redux-cover-2.avif"
+                alt="introduction img"
+                class="introduction-item__img img-fluid"
+              />
+            </div>
+            <p class="introduction-item__text hpc__paragrapg">
+              Redux برای ذخیره داده‌ها در لایه نمایش مورد استفاده قرار می‌گیرد.
+              کاربرد اصلی ریداکس در کنار فریم ورک هایی مانند React و React
+              Native است. اما می‌توان از آن در Angular، Angular2، Vue، Mithril و
+              سایر کتابخانه‌های JS استفاده کرد چون ریداکس هیچ مشکلی در ادغام شدن
+              با سایر فریم ورک‌ها ندارد. این فریم ورک با یک مکانیسم ساده به
+              راحتی خودش را در کنار سایر زبان‌ها جا می‌دهد.
+            </p>
+            <p class="introduction-item__text hpc__paragrapg">
+              ریداکس خطایابی (Debug) برنامه را راحت می‌کند. به خاطر ساختار منظمی
+              که دارد پیدا کردن باگ‌های نرم افزاری و تست نرم افزار داخل این
+              کتابخانه راحت است. همینطور ریداکس این قابلیت را دارد که از سرور
+              Render بگیرد. در این حالت باید state برنامه را به سرور ارسال کنید
+              و سرور به آن پاسخ می‌دهد، سپس بخش‌های مورد نیاز به زبان HTML تبدیل
+              می‌شوند و برای کاربر ارسال می‌شوند.
+            </p>
+            <p class="introduction-item__text hpc__paragrapg">
+              همچنین ریداکس گزینه بسیار خوبی برای استفاده در پروژه‌های بزرگ است،
+              زیرا در پروژه‌های شناخته شده‌ای حضور داشته است. ریداکس در پروژه
+              هایی مانند صفحه جدید ادمین وردپرس (سایت WordPress.com)، سایت
+              توییتر در نسخه موبایل و همینطور دیباگر جدید مرورگر فایرفاکس مورد
+              استفاده قرار گرفته است.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Finish Introduction  -->
+
+    <!-- Start Topic Info -->
+    <div id="topic" class="topic">
+      <div class="container">
+        <div class="topic__content">
+          <!-- Start Topic Header -->
+          <div class="topic__header">
+            <div class="topic__header-right">
+              <h3 class="topic__header__title hpc__title">مباحث این دوره</h3>
+            </div>
+            <div class="topic__header-left">
+              <div class="topic__lesson-number-wrapper">
+                <span class="topic__lesson-number-count">11</span>
+                <span class="topic__lesson-number-text">درس</span>
+              </div>
+              <div class="topic__lesson-time-wrapper">
+                <span class="topic__lesson-time-count">1:00:50</span>
+                <span class="topic__lesson-time-text">ساعت</span>
+              </div>
+            </div>
+          </div>
+          <!-- Finish Topic Header -->
+          <!-- Start Topic Accordion -->
+          <div class="accordion topic__accordion" id="topicAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button topic__header-btn"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <span class="topic__header-btn-text">معرفی دوره</span>
+                  <i class="fa-solid fa-angle-down topic__header-btn-icon"></i>
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#topicAccordion"
+              >
+                <div class="accordion-body topic__accordion-body">
+                  <div class="topic__accordion-body-right">
+                    <span class="topic__accordion-count">1</span>
+                    <a href="#" class="topic__accordion-link">
+                      <span class="topic__accordion-svg-wrapper">
+                        <img
+                          src="images/product-svg/play-circle-video.svg"
+                          alt=""
+                          class="topic__accordion-svg"
+                        />
+                      </span>
+                      <span class="topic__accordion-link-text">معرفی دوره</span>
+                    </a>
+                  </div>
+                  <div class="topic__accordion-body-left">
+                    <span class="topic__accordion-time"> 00:09:27</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button topic__header-btn collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <span class="topic__header-btn-text">
+                    مقدمات + رفع ابهام های موجود
+                  </span>
+                  <i class="fa-solid fa-angle-down topic__header-btn-icon"></i>
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#topicAccordion"
+              >
+                <div class="accordion-body topic__accordion-body">
+                  <div class="topic__accordion-body-right">
+                    <span class="topic__accordion-count">1</span>
+                    <a href="#" class="topic__accordion-link">
+                      <span class="topic__accordion-svg-wrapper">
+                        <img
+                          src="images/product-svg/play-circle-video.svg"
+                          alt=""
+                          class="topic__accordion-svg"
+                        />
+                      </span>
+                      <span class="topic__accordion-link-text">
+                        ریداکس چیه !!؟
+                      </span>
+                    </a>
+                  </div>
+                  <div class="topic__accordion-body-left">
+                    <span class="topic__accordion-time"> 00:10:57</span>
+                  </div>
+                </div>
+                <div class="accordion-body topic__accordion-body">
+                  <div class="topic__accordion-body-right">
+                    <span class="topic__accordion-count">2</span>
+                    <a href="#" class="topic__accordion-link">
+                      <span class="topic__accordion-svg-wrapper">
+                        <img
+                          src="images/product-svg/play-circle-video.svg"
+                          alt=""
+                          class="topic__accordion-svg"
+                        />
+                      </span>
+                      <span class="topic__accordion-link-text">
+                        چرا میگن ریداکس انقدر سخته !!؟
+                      </span>
+                    </a>
+                  </div>
+                  <div class="topic__accordion-body-left">
+                    <span class="topic__accordion-time"> 00:15:31</span>
+                  </div>
+                </div>
+                <div class="accordion-body topic__accordion-body">
+                  <div class="topic__accordion-body-right">
+                    <span class="topic__accordion-count">3</span>
+                    <a href="#" class="topic__accordion-link">
+                      <span class="topic__accordion-svg-wrapper">
+                        <img
+                          src="images/product-svg/play-circle-video.svg"
+                          alt=""
+                          class="topic__accordion-svg"
+                        />
+                      </span>
+                      <span class="topic__accordion-link-text">
+                        تو چه پروژه ای از ریداکس استفاده نکنیم
+                      </span>
+                    </a>
+                  </div>
+                  <div class="topic__accordion-body-left">
+                    <span class="topic__accordion-time"> 00:20:57</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button topic__header-btn collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <span class="topic__header-btn-text">
+                    پیش نیاز های مهم ریداکس
+                  </span>
+                  <i class="fa-solid fa-angle-down topic__header-btn-icon"></i>
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#topicAccordion"
+              >
+                <div class="accordion-body topic__accordion-body">
+                  <div class="topic__accordion-body-right">
+                    <span class="topic__accordion-count">1</span>
+                    <a href="#" class="topic__accordion-link">
+                      <span class="topic__accordion-svg-wrapper">
+                        <img
+                          src="images/product-svg/play-circle-video.svg"
+                          alt=""
+                          class="topic__accordion-svg"
+                        />
+                      </span>
+                      <span class="topic__accordion-link-text">
+                        آشنایی با Pure Function
+                      </span>
+                    </a>
+                  </div>
+                  <div class="topic__accordion-body-left">
+                    <span class="topic__accordion-time"> 00:20:27</span>
+                  </div>
+                </div>
+                <div class="accordion-body topic__accordion-body">
+                  <div class="topic__accordion-body-right">
+                    <span class="topic__accordion-count">2</span>
+                    <a href="#" class="topic__accordion-link">
+                      <span class="topic__accordion-svg-wrapper">
+                        <img
+                          src="images/product-svg/play-circle-video.svg"
+                          alt=""
+                          class="topic__accordion-svg"
+                        />
+                      </span>
+                      <span class="topic__accordion-link-text">
+                        کار با متد reduce + حل تمرین
+                      </span>
+                    </a>
+                  </div>
+                  <div class="topic__accordion-body-left">
+                    <span class="topic__accordion-time"> 00:30:07</span>
+                  </div>
+                </div>
+                <div class="accordion-body topic__accordion-body">
+                  <div class="topic__accordion-body-right">
+                    <span class="topic__accordion-count">3</span>
+                    <a href="#" class="topic__accordion-link">
+                      <span class="topic__accordion-svg-wrapper">
+                        <img
+                          src="images/product-svg/play-circle-video.svg"
+                          alt=""
+                          class="topic__accordion-svg"
+                        />
+                      </span>
+                      <span class="topic__accordion-link-text">
+                        توسعه تمرین برای درک بهتر reduce
+                      </span>
+                    </a>
+                  </div>
+                  <div class="topic__accordion-body-left">
+                    <span class="topic__accordion-time"> 00:08:57</span>
+                  </div>
+                </div>
+                <div class="accordion-body topic__accordion-body">
+                  <div class="topic__accordion-body-right">
+                    <span class="topic__accordion-count">4</span>
+                    <a href="#" class="topic__accordion-link">
+                      <span class="topic__accordion-svg-wrapper">
+                        <img
+                          src="images/product-svg/play-circle-video.svg"
+                          alt=""
+                          class="topic__accordion-svg"
+                        />
+                      </span>
+                      <span class="topic__accordion-link-text">
+                        آشنایی با HOF – قسمت اول
+                      </span>
+                    </a>
+                  </div>
+                  <div class="topic__accordion-body-left">
+                    <span class="topic__accordion-time"> 00:10:01</span>
+                  </div>
+                </div>
+                <div class="accordion-body topic__accordion-body">
+                  <div class="topic__accordion-body-right">
+                    <span class="topic__accordion-count">5</span>
+                    <a href="#" class="topic__accordion-link">
+                      <span class="topic__accordion-svg-wrapper">
+                        <img
+                          src="images/product-svg/play-circle-video.svg"
+                          alt=""
+                          class="topic__accordion-svg"
+                        />
+                      </span>
+                      <span class="topic__accordion-link-text">
+                        آشنایی با HOF – قسمت دوم
+                      </span>
+                    </a>
+                  </div>
+                  <div class="topic__accordion-body-left">
+                    <span class="topic__accordion-time"> 00:20:05</span>
+                  </div>
+                </div>
+                <div class="accordion-body topic__accordion-body">
+                  <div class="topic__accordion-body-right">
+                    <span class="topic__accordion-count">6</span>
+                    <a href="#" class="topic__accordion-link">
+                      <span class="topic__accordion-svg-wrapper">
+                        <img
+                          src="images/product-svg/play-circle-video.svg"
+                          alt=""
+                          class="topic__accordion-svg"
+                        />
+                      </span>
+                      <span class="topic__accordion-link-text">
+                        آشنایی با Mutate و Immutate – قسمت اول
+                      </span>
+                    </a>
+                  </div>
+                  <div class="topic__accordion-body-left">
+                    <span class="topic__accordion-time"> 00:05:17</span>
+                  </div>
+                </div>
+                <div class="accordion-body topic__accordion-body">
+                  <div class="topic__accordion-body-right">
+                    <span class="topic__accordion-count">7</span>
+                    <a href="#" class="topic__accordion-link">
+                      <span class="topic__accordion-svg-wrapper">
+                        <img
+                          src="images/product-svg/play-circle-video.svg"
+                          alt=""
+                          class="topic__accordion-svg"
+                        />
+                      </span>
+                      <span class="topic__accordion-link-text">
+                        آشنایی با Mutate و Immutate – قسمت دوم
+                      </span>
+                    </a>
+                  </div>
+                  <div class="topic__accordion-body-left">
+                    <span class="topic__accordion-time"> 00:11:57</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Finish Topic Accordion -->
+        </div>
+      </div>
+    </div>
+    <!-- Finish Topic Info -->
+
+    <!-- Start Comment -->
+    <div class="comment">
+      <div class="container">
+        <div class="comment__content-wrapper">
+          <div class="comment__form-review">
+            <div class="comment__respond">
+              <h3
+                class="comment__respond-title animate__animated animate__flash animate__infinite"
+              >
+                نظرتو در میون بزار
+              </h3>
+              <div class="comment__respond__select-score-wrapper">
+                <h4 class="comment__respond__select-score-title">امتیاز شما</h4>
+                <div class="comment__respond__custom-select-score">
+                  <form id="comment__respond__score-form">
+                    <select name="" id="comment__respond__score-select">
+                      <option value="defualt">تایین کنید</option>
+                      <option value="best">عالی</option>
+                      <option value="good">خوب</option>
+                      <option value="notbad">متوسط</option>
+                      <option value="bad">بد</option>
+                    </select>
+                  </form>
+                </div>
+              </div>
+              <div class="comment__respond-comment">
+                <h4 class="comment__respond-comment__title">نظر شما</h4>
+                <div class="comment__respond-comment__textarea-wrapper">
+                  <textarea
+                    name=""
+                    id=""
+                    class="comment__respond-comment__textarea"
+                    placeholder="نظرتو بنویس...."
+                  ></textarea>
+                </div>
+              </div>
+              <div class="comment__respond__submit">
+                <button class="comment__respond__submit-btn">
+                  ارسال
+                  <i
+                    class="fa-solid fa-angles-left comment__respond__submit-icon"
+                  ></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="comment__container comment__comment-wrapper">
+            <div class="comment__contnet">
+              <div class="comment__card">
+                <div class="comment-card__header">
+                  <div class="commnet-card__header__profile">
+                    <div
+                      class="commnet-card__header__profile-icon comment-card__svg-wrapper"
+                    >
+                      <img
+                        src="./images/product-svg/user-comment.svg"
+                        alt="user Cm"
+                        class="comment-card__svg"
+                      />
+                    </div>
+                    <span class="commnet-card__header__profile-name"
+                      >Radin.k.h</span
+                    >
+                  </div>
+                  <div class="comment-card__user-stutus">
+                    <span class="comment-card__user-stutus-text"
+                      >دانشجو دوره</span
+                    >
+                  </div>
+                </div>
+                <div class="commnet-card__content">
+                  <p class="commnet-card__content-text">
+                    دوره بسیار عالی فقط یک سوال داشتم
+                    <br />
+                    من خودم چندین بار پروژه ثبت نام کاربر هارو انجام دادم ، یک
+                    بار گفتم ی ذره عوضش کنم چندتا input ساختم و یک button که
+                    مقدار هارو دریافت میکردن و میریختن تو ابجکتی که درون ارایه
+                    بود ولی کاربر دوم که میخواست ثبت نام کنه به مشکل میخورد یعنی
+                    مقدار های کاربر اولی هم عوض میشد ،بنظرتون چطوری میتونم این
+                    مشکل رو حل کنم؟
+                  </p>
+                </div>
+                <div class="comment-card__control">
+                  <ul class="comment-card__control-list">
+                    <li class="comment-card__control-item">
+                      <a
+                        href="#"
+                        class="comment-card__control-reply comment-card__control-link"
+                        title="پاسخ"
+                      >
+                        <img
+                          src="./images/comment/reply.svg"
+                          alt="commnet icon"
+                          class="comment-card__control-svg"
+                        />
+                      </a>
+                    </li>
+                    <li class="comment-card__control-item">
+                      <a
+                        href="#"
+                        class="comment-card__control-like comment-card__control-link"
+                        title="پسندیدن"
+                      >
+                        <span class="comment-card__control-like-count">13</span>
+                        <img
+                          src="./images/comment/like-outline.svg"
+                          alt="commnet icon"
+                          class="comment-card__control-svg"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="comment__container">
+                <div class="comment__card">
+                  <div class="comment-card__header">
+                    <div class="commnet-card__header__profile">
+                      <div
+                        class="commnet-card__header__profile-icon comment-card__svg-wrapper"
+                      >
+                        <img
+                          src="./images/product-svg/user-comment.svg"
+                          alt="user Cm"
+                          class="comment-card__svg"
+                        />
+                      </div>
+                      <span class="commnet-card__header__profile-name"
+                        >محمدامین سعیدی راد
+                      </span>
+                    </div>
+                    <div class="comment-card__user-stutus">
+                      <span class="comment-card__user-stutus-text"
+                        >مدرس دوره</span
+                      >
+                    </div>
+                  </div>
+                  <div class="commnet-card__content">
+                    <p class="commnet-card__content-text">
+                      سلام عزیز. جهت پاسخگویی بهتر و با‌کیفیت‌تر، لطفا سوالات
+                      فنی رو تو بخش پرسش و پاسخ دوره مطرح کنید.
+                    </p>
+                  </div>
+                  <div class="comment-card__control">
+                    <ul class="comment-card__control-list">
+                      <li class="comment-card__control-item">
+                        <a
+                          href="#"
+                          class="comment-card__control-reply comment-card__control-link"
+                          title="پاسخ"
+                        >
+                          <img
+                            src="./images/comment/reply.svg"
+                            alt="commnet icon"
+                            class="comment-card__control-svg"
+                          />
+                        </a>
+                      </li>
+                      <li class="comment-card__control-item">
+                        <a
+                          href="#"
+                          class="comment-card__control-like comment-card__control-link"
+                          title="پسندیدن"
+                        >
+                          <span class="comment-card__control-like-count"
+                            >13</span
+                          >
+                          <img
+                            src="./images/comment/like-outline.svg"
+                            alt="commnet icon"
+                            class="comment-card__control-svg"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="comment__contnet">
+              <div class="comment__card">
+                <div class="comment-card__header">
+                  <div class="commnet-card__header__profile">
+                    <div
+                      class="commnet-card__header__profile-icon comment-card__svg-wrapper"
+                    >
+                      <img
+                        src="./images/product-svg/user-comment.svg"
+                        alt="user Cm"
+                        class="comment-card__svg"
+                      />
+                    </div>
+                    <span class="commnet-card__header__profile-name"
+                      >morteza</span
+                    >
+                  </div>
+                  <div class="comment-card__user-stutus">
+                    <span class="comment-card__user-stutus-text"
+                      >دانشجو دوره</span
+                    >
+                  </div>
+                </div>
+                <div class="commnet-card__content">
+                  <p class="commnet-card__content-text">
+                    سلام وقت بخیر من به یک مشکل خیلی بد دچار شدم و دو روزه دارم
+                    می گردم نتونستم مشکل رو برطرف کنم تا اینکه گفتم اینجا از شما
+                    بپرسم من یک سایت خبری نوشتم که در صفحه اول لیست اخبار رو
+                    نشون میده و کاربر با کلیک روی هر خبر می تونه وارد صفحه اون
+                    خبر بشه، همچنین می تونه برای اون خبر نظر خودش رو ثبت کنه،
+                    برای این کار یک تسکت اریا گذاشتم، وقتی نظر خودش رو نوشت و
+                    دکمه ثبت رو زد اطلاعات ارسال میشه سمت سرور و بعد از پردازش
+                    ریدایرکت بک می شه به صفحه همین خبر و یک پیغام موفقیت امیز هم
+                    براش نمایش داده میشه، تا اینجا همه چیز اوکیه، اما وقتی روی
+                    دکمه بک مرورگر میزنه دوباره همین خبر باز میشه و اون متنی که
+                    توی تکست اریا نوشته بود هم نمایش داده میشه که خیلی بده این،
+                    و مجبوره دوباره روی دکمه بک مرورگر بزنه تا وارد صفحه لیست
+                    اخبار بشه، این اتفاق هم به خاطر این میافته که برای ثبت نظر
+                    توی دیتابیس یه رفت و برگشت انجام میشه، چه کار کنم که این
+                    مشکل برطرف بشه ؟ ممنون میشم اگه کمک کنید
+                  </p>
+                </div>
+                <div class="comment-card__control">
+                  <ul class="comment-card__control-list">
+                    <li class="comment-card__control-item">
+                      <a
+                        href="#"
+                        class="comment-card__control-reply comment-card__control-link"
+                        title="پاسخ"
+                      >
+                        <img
+                          src="./images/comment/reply.svg"
+                          alt="commnet icon"
+                          class="comment-card__control-svg"
+                        />
+                      </a>
+                    </li>
+                    <li class="comment-card__control-item">
+                      <a
+                        href="#"
+                        class="comment-card__control-like comment-card__control-link"
+                        title="پسندیدن"
+                      >
+                        <span class="comment-card__control-like-count">13</span>
+                        <img
+                          src="./images/comment/like-outline.svg"
+                          alt="commnet icon"
+                          class="comment-card__control-svg"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="comment__container">
+                <div class="comment__card">
+                  <div class="comment-card__header">
+                    <div class="commnet-card__header__profile">
+                      <div
+                        class="commnet-card__header__profile-icon comment-card__svg-wrapper"
+                      >
+                        <img
+                          src="./images/product-svg/user-comment.svg"
+                          alt="user Cm"
+                          class="comment-card__svg"
+                        />
+                      </div>
+                      <span class="commnet-card__header__profile-name"
+                        >morteza
+                      </span>
+                    </div>
+                    <div class="comment-card__user-stutus">
+                      <span class="comment-card__user-stutus-text"
+                        >دانشجو دوره</span
+                      >
+                    </div>
+                  </div>
+                  <div class="commnet-card__content">
+                    <p class="commnet-card__content-text">
+                      راستی این رو هم بگم که بک اند با پی اچ پی نوشتم و برای
+                      برگشت به صفحه قبلی یه تابع نوشتم که تابع به این شکله: (((
+                      header(‘Location: ‘. $_SERVER[‘HTTP_REFERER’]); )))
+                    </p>
+                  </div>
+                  <div class="comment-card__control">
+                    <ul class="comment-card__control-list">
+                      <li class="comment-card__control-item">
+                        <a
+                          href="#"
+                          class="comment-card__control-reply comment-card__control-link"
+                          title="پاسخ"
+                        >
+                          <img
+                            src="./images/comment/reply.svg"
+                            alt="commnet icon"
+                            class="comment-card__control-svg"
+                          />
+                        </a>
+                      </li>
+                      <li class="comment-card__control-item">
+                        <a
+                          href="#"
+                          class="comment-card__control-like comment-card__control-link"
+                          title="پسندیدن"
+                        >
+                          <span class="comment-card__control-like-count"
+                            >13</span
+                          >
+                          <img
+                            src="./images/comment/like-outline.svg"
+                            alt="commnet icon"
+                            class="comment-card__control-svg"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="comment__container">
+                  <div class="comment__card">
+                    <div class="comment-card__header">
+                      <div class="commnet-card__header__profile">
+                        <div
+                          class="commnet-card__header__profile-icon comment-card__svg-wrapper"
+                        >
+                          <img
+                            src="./images/product-svg/user-comment.svg"
+                            alt="user Cm"
+                            class="comment-card__svg"
+                          />
+                        </div>
+                        <span class="commnet-card__header__profile-name"
+                          >محمدامین سعیدی راد</span
+                        >
+                      </div>
+                      <div class="comment-card__user-stutus">
+                        <span class="comment-card__user-stutus-text"
+                          >دانشجو دوره</span
+                        >
+                      </div>
+                    </div>
+                    <div class="commnet-card__content">
+                      <p class="commnet-card__content-text">
+                        سلام مرتضی جان. حدود 5 ساله php کار نکردم و نمی‌دونم. از
+                        یه توسعه دهنده PHP بپرسی بهتر می‌تونه راهنماییت کنه.
+                      </p>
+                    </div>
+                    <div class="comment-card__control">
+                      <ul class="comment-card__control-list">
+                        <li class="comment-card__control-item">
+                          <a
+                            href="#"
+                            class="comment-card__control-reply comment-card__control-link"
+                            title="پاسخ"
+                          >
+                            <img
+                              src="./images/comment/reply.svg"
+                              alt="commnet icon"
+                              class="comment-card__control-svg"
+                            />
+                          </a>
+                        </li>
+                        <li class="comment-card__control-item">
+                          <a
+                            href="#"
+                            class="comment-card__control-like comment-card__control-link"
+                            title="پسندیدن"
+                          >
+                            <span class="comment-card__control-like-count"
+                              >13</span
+                            >
+                            <img
+                              src="./images/comment/like-outline.svg"
+                              alt="commnet icon"
+                              class="comment-card__control-svg"
+                            />
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="global-pagination d-flex justify-content-center">
+            <ul class="global__pagination-list d-flex align-items-center">
+              <li class="global__pagination-item">
+                <a href="#" class="global__pagination-link">
+                  <i class="fa-solid fa-long-arrow-right"></i>
+                </a>
+              </li>
+              <li class="global__pagination-item">
+                <a
+                  href="#"
+                  class="global__pagination-link global__pagination-link--active"
+                >
+                  1
+                </a>
+              </li>
+              <li class="global__pagination-item">
+                <a href="#" class="global__pagination-link"> 2 </a>
+              </li>
+              <li class="global__pagination-item">
+                <a href="#" class="global__pagination-link"> 3 </a>
+              </li>
+              <li class="global__pagination-item">
+                <a href="#" class="global__pagination-link">
+                  <i class="fa-solid fa-long-arrow-left"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Finish Comment -->
+
+    <!-- Start Footer -->
+    <div class="footer hpc__section">
+      <div class="container">
+        <div class="footer__desc">
+          <div class="row">
+            <div class="col-12">
+              <h4 class="footer__desc-title hpc__title">
+                ضمانت سبز لرن برای کلیه محصولات آموزشی
+              </h4>
+              <p class="footer__desc-text">
+                وقتی تازه شروع به یادگیری برنامه نویسی کردم. یکی از مشکلاتی که
+                در فرآیند یادگیری داشتم، کمبود آموزش های خوب با پشتیبانی قابل
+                قبول بود که باعث شد اون موقع تصمیم بگیرم اگر روزی توانایی مالی و
+                فنی قابل قبولی داشتم یک وب سایت برای حل این مشکل راه اندازی کنم!
+                و خب امروز آکادمی آموزش برنامه نویسی سبزلرن به عنوان یک آکادمی
+                خصوصی فعالیت میکنه و این به این معنی هست که هر مدرسی اجازه تدریس
+                در اون رو نداره و باید از فیلترینگ های خاص آکادمی سبزلرن رد شه!
+                این به این معنی هست که ما برامون فن بیان و نحوه تعامل مدرس با
+                دانشجو بسیار مهمه! ما در آکادمی سبزلرن تضمین پشتیبانی خوب و با
+                کیفیت رو به شما میدیم . چرا که مدرسین وب سایت سبزلرن حتی برای
+                پشتیبانی دوره های رایگان شون هم هزینه دریافت میکنند و متعهد
+                هستند که هوای کاربر های عزیز رو داشته باشند
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer__widget">
+          <div class="row">
+            <div class="col-sm-12 col-lg-3 footer-widget__quick-access">
+              <div class="row">
+                <div class="col-6">
+                  <div class="footer__widget-item">
+                    <a href="#">
+                      فروشگاه
+                      <span class="hpc__popular">محبوب</span>
+                    </a>
+                  </div>
+                  <div class="footer__widget-item">
+                    <a href="#"> ارتباط با ما </a>
+                  </div>
+                  <div class="footer__widget-item">
+                    <a href="#"> دربـــاره ما </a>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="footer__widget-item">
+                    <a class="footer-widget__link" href="#"> مقالات</a>
+                  </div>
+                  <div class="footer__widget-item">
+                    <a class="footer-widget__link" href="#">
+                      قوانین و مقررات
+                    </a>
+                  </div>
+                  <div class="footer__widget-item">
+                    <a class="footer-widget__link" href="#"
+                      >پایتون
+                      <span class="hpc__new">جدید</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-3 footer-widget__working-hours">
+              <h3 class="footer-widget__title">ساعات کاری</h3>
+              <div class="footer-widget__text">
+                <p class="row">شنبه تا چهارشنبه 8 صبح تا 18 عصر</p>
+                <p class="row">پنج شنبه‌ها ساعت 8 صبح تا 12 ظهر</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 footer-widget__contact-us">
+              <h3 class="footer-widget__title">ارتباط با ما</h3>
+              <div class="footer-widget__text">
+                <div class="row">
+                  <span class="footer-widget-email-name col-4"> ایمیل </span>
+                  <span class="footer-widget-email-adress col-8">
+                    <a href="#" class=""> soobhanybi@gmail.com </a>
+                  </span>
+                </div>
+                <div class="row">
+                  <span class="footer-widget-phone-name col-4"
+                    >شماره همراه</span
+                  >
+                  <span class="footer-widget-phone-number col-8"
+                    >09396007232</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 footer-widget__trust-symbol">
+              <div class="footer-widget__namda-box">
+                <a
+                  class="footer-widget__link"
+                  href="https://trustseal.enamad.ir/?id=274698&code=HYeEYWQTRWrm1YcxgLhn"
+                >
+                  <img src="images/namad/enamad-two-star.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row footer__copyright">
+          <p>
+            این قالب صرفا جهت نمونه کار است و از سایت
+            <a href="https://sabzlearn.ir/" class="footer__link hpc__popular"
+              >سبزلرن</a
+            >
+            میباشد
+          </p>
+        </div>
+      </div>
+      <div class="footer__animation">
+        <div class="particles">
+          <span style="--delay: 18"></span>
+          <span style="--delay: 25"></span>
+          <span style="--delay: 14"></span>
+          <span style="--delay: 16"></span>
+          <span style="--delay: 10"></span>
+          <span style="--delay: 12"></span>
+          <span style="--delay: 19"></span>
+          <span style="--delay: 22"></span>
+          <span style="--delay: 23"></span>
+          <span style="--delay: 18"></span>
+          <span style="--delay: 25"></span>
+          <span style="--delay: 14"></span>
+          <span style="--delay: 16"></span>
+          <span style="--delay: 10"></span>
+          <span style="--delay: 12"></span>
+          <span style="--delay: 19"></span>
+          <span style="--delay: 22"></span>
+          <span style="--delay: 23"></span>
+          <span style="--delay: 18"></span>
+          <span style="--delay: 2"></span>
+          <span style="--delay: 14"></span>
+          <span style="--delay: 6"></span>
+          <span style="--delay: 1"></span>
+          <span style="--delay: 12"></span>
+          <span style="--delay: 19"></span>
+          <span style="--delay: 22"></span>
+          <span style="--delay: 23"></span>
+          <span style="--delay: 18"></span>
+          <span style="--delay: 28"></span>
+          <span style="--delay: 14"></span>
+          <span style="--delay: 6"></span>
+          <span style="--delay: 10"></span>
+          <span style="--delay: 2"></span>
+          <span style="--delay: 19"></span>
+          <span style="--delay: 22"></span>
+          <span style="--delay: 23"></span>
+        </div>
+      </div>
+    </div>
+    <!-- Finish Footer -->
+
+    <!-- Start Script SRC -->
+    <script
+      defer
+      src="vendor/node_modules/@fortawesome/fontawesome-free/js/all.min.js"
+    ></script>
+    <script
+      defer
+      src="vendor/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+    <script src="./js/loader.js"></script>
+    <script src="js/shared.js" type="module"></script>
+    <script src="js/product.js" type="module"></script>
+
+    <!-- Finish Script SRC -->
+  </body>
+</html>

@@ -1,0 +1,230 @@
+@import "./animation/animation.css";
+@import "css-variable.css";
+@import "./sheared-components/header/header.css";
+@import "./sheared-components/course-section/courses-section.css";
+@import "sheared-components/courses-slider/courses-slider.css";
+@import "sheared-components/footer/footer.css";
+
+/* Start header */
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header .global__searchbar {
+  display: none;
+}
+
+.global__searchbar {
+  background-color: var(--bg-searchbar-glass);
+}
+
+.main-header__account-btn {
+  border-color: var(--dark-color);
+}
+
+/* Finish header */
+
+/* Start Style About Me */
+
+.about-us {
+  /* background: rgba(255, 255, 255, 0.1); */
+  /* #43c67956 */
+  background-image: url("../images/about-us/pexels-lukas-574069.jpg");
+  background-color: #444;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.about-us .container {
+  padding: 5rem 15rem;
+}
+
+.about-us__box {
+  cursor: default;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--dark-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+.about-us__box:hover :is(.about-us__img-wrapper, .about-us__content) {
+  transform: translateZ(100px);
+  transition-delay: 100ms;
+}
+
+.about-us__box-right {
+  flex-flow: row;
+}
+
+.about-us__box-left {
+  flex-flow: row-reverse;
+}
+
+.about-us__img-wrapper {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+}
+
+.about-us__content {
+  display: flex;
+  width: 65%;
+  padding: 0 1rem;
+  color: var(--white-color);
+  display: flex;
+  flex-flow: column;
+}
+
+.about-us__title {
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+.about-us__subtitle {
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .about-us .container {
+    padding: 5rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .about-us__title {
+    font-size: 1.5rem;
+  }
+  .about-us__subtitle {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about-us .container {
+    padding: 5rem 1rem;
+  }
+  .about-us__box {
+    flex-flow: row;
+    padding: 2rem;
+  }
+  .about-us__img-wrapper {
+    width: 20%;
+  }
+  .about-us__content {
+    width: 70%;
+  }
+}
+
+/* Finish Style About Me */
+
+/* Start Article Style */
+
+.article-course__content div {
+  position: absolute;
+}
+.articles__stage,
+.articles__ring,
+.img {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  user-select: none;
+}
+
+.articles__stage,
+.articles__ring,
+.article-wrapper-box {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  user-select: none;
+}
+
+.articles__content {
+  margin: 5rem 0;
+  height: 50rem;
+  position: relative;
+}
+
+.articles__stage,
+.articles-container,
+.articles__ring,
+.article-wrapper-box {
+  position: absolute;
+}
+.articles-container {
+  perspective: 2000px;
+  width: 300px;
+  height: 400px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.article-box {
+  width: min(100%, 25rem);
+  height: 100%;
+  border-radius: 2rem;
+  box-shadow: 0px 0px 5px var(--primary-color);
+  overflow: hidden;
+  position: relative;
+}
+
+.article-box__img-wrapper {
+  height: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.article-box__img {
+  width: 100%;
+  height: 100%;
+}
+
+.article-box__content {
+  margin: 3rem 1rem;
+  font-size: 2rem;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.article-box__title {
+  margin-bottom: 2rem;
+}
+
+.article-box__content .article-box__subtitle {
+  color: var(--white-color);
+  font-size: 2.5rem;
+  margin: 2rem 0;
+}
+
+.article-box__link {
+  font-weight: bold;
+  padding: 1rem 2.5rem;
+  border-radius: 4rem;
+  border: 0.2rem solid var(--primary-color);
+  background-color: transparent;
+}
+
+.article-box__link:hover {
+  padding: 0.5rem 1.75rem;
+}
+
+.article-box:hover .article-box__link {
+  transform: scale(1.1);
+  color: var(--dark-color);
+  background-color: var(--primary-color);
+}
+
+/* Start Article Style */

@@ -1,0 +1,22 @@
+.global-pagination {
+  margin: 4rem 0;
+}
+
+.global__pagination-link {
+  font-size: 1.7rem;
+  font-weight: bold;
+  width: 4rem;
+  height: 4rem;
+  margin: 0 0.5rem;
+  border: 0.2rem solid var(--primary-color);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.global__pagination-link:hover,
+.global__pagination-link--active {
+  color: var(--dark-color);
+  background-color: var(--primary-color);
+}

@@ -1,0 +1,429 @@
+/* @import "../../../animation/animation.css"; */
+@import "../../../css/css-variable.css";
+@import "../../../css/sheared-components/header/header.css";
+
+/* Start Style Panel */
+.panel-wrapper {
+  height: 100vh;
+  overflow: hidden;
+  justify-content: space-between;
+  /* padding: 1rem 2rem; */
+  padding: 0.75rem 1rem;
+}
+
+.panel-sidebar__wrapper,
+.panel-home__wrapper {
+  border-radius: 1rem;
+  height: 100%;
+  background-color: var(--dark-color);
+  box-shadow: 0 0 0.2rem var(--white-color);
+}
+
+.panel-home__wrapper {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+/* Start Panel Sidebar Style */
+
+.panel-sidebar__title-wrapper {
+  padding: 0.5rem 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.panel-sidebar__menu-notif {
+  cursor: pointer;
+  width: 20%;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: var(--box-color);
+  position: relative;
+}
+
+.panel-sidebar__menu-notif-count {
+  cursor: default;
+  color: var(--white-color);
+  font-size: 2rem;
+  font-weight: bold;
+  width: 3rem;
+  height: 3rem;
+  border: 0.2rem solid var(--bs-primary);
+  border-radius: 50%;
+  top: -1.1rem;
+  right: -2.1rem;
+  position: absolute;
+}
+
+.panel-sidebar__menu-notif:is(.active) .panel-sidebar__menu-notif-count {
+  background-color: var(--bs-primary);
+}
+
+.panel-sidebar__menu-icon {
+  color: var(--white-color);
+}
+
+.panel-sidebar__profile-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.panel-sidebar__profile-wrapper::after {
+  /* z-index: 1; */
+  content: "";
+  width: 90%;
+  height: 0.1rem;
+  background-color: var(--primary-color);
+  transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: absolute;
+  bottom: 0;
+}
+
+.panel-sidebar__profile {
+  cursor: pointer;
+  z-index: 3;
+  width: 100%;
+  height: 5rem;
+  position: relative;
+  gap: 0.5rem;
+}
+
+.panel-sidebar__profile-name-wrapper {
+  width: 60%;
+}
+
+:has(.panel-sidebar__profile:hover) .panel-sidebar__profile-name-wrapper {
+  width: 80%;
+}
+
+:has(.panel-sidebar__profile:hover) .panel-sidebar__profile-wrapper::after {
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.panel-sidebar__profile-img {
+  height: 100%;
+}
+
+:has(.panel-sidebar__profile:hover) .panel-sidebar__profile-img {
+  display: none;
+}
+
+.panel-sidebar__profile-name {
+  font-family: var(--seccend-font);
+  color: var(--white-color);
+}
+
+:has(.panel-sidebar__profile:hover) .panel-sidebar__profile-name {
+  color: var(--dark-color);
+}
+
+.panel-sidebar__menu-wrapper {
+  height: 80%;
+}
+
+.panel-sidebar__menu {
+  height: 100%;
+  padding: 2rem 0;
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
+
+.panel-sidebar__list {
+  padding: 0.5rem 1rem;
+  transition: all 50ms;
+}
+
+.panel-sidebar__list:hover {
+  background-color: var(--box-color);
+}
+
+:has(.panel-sidebar__link-active).panel-sidebar__list {
+  background-color: var(--box-color);
+  position: relative;
+}
+
+:has(.panel-sidebar__link-active).panel-sidebar__list::after {
+  content: "";
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.panel-sidebar__link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.panel-sidebar__link:hover {
+  color: var(--text-main-header-color);
+}
+
+.panel-sidebar__link-text {
+  font-size: 2rem;
+}
+
+.panel-sidebar__link-icon {
+  width: 2.5rem;
+}
+/* = Start Panel SideBar Mobile Style = */
+.phone {
+  background-color: #36383f;
+  border-radius: 40px;
+  width: 300px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 30px 50px 100px #85888c;
+}
+.content {
+  border: 1px solid #36383f;
+  border-radius: 20px;
+  width: 94%;
+  height: 91%;
+  background-color: #f5f6fa;
+  overflow: hidden;
+}
+nav {
+  background-color: #1e1e23;
+  height: 65px;
+}
+
+#menuToggle {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 25px;
+  left: 25px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input {
+  display: flex;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+#menuToggle span {
+  display: flex;
+  width: 29px;
+  height: 2px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 5px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-3px, -1px);
+  background: #36383f;
+}
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+  position: absolute;
+  width: 180px;
+  height: 400px;
+  box-shadow: 0 0 10px #85888c;
+  margin: -50px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background-color: #f5f6fa;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu li {
+  padding: 10px 0;
+  transition-delay: 2s;
+}
+
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+/* = Finish Panel SideBar Mobile Style = */
+
+/* Finish Panel Sidebar Style */
+
+/* Start Home Panel Style  */
+
+.panel-home__wrapper {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+}
+
+.info-timezone {
+  color: #b3e8c9;
+  font-size: 2rem;
+}
+
+/* = Start Header Styles = */
+
+.panel-home__header {
+  cursor: default;
+  color: var(--white-color);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.panel-home__header-title {
+  font-size: 2.5rem;
+}
+
+/* = Finihs Header Styles = */
+
+/* = Start Header Box Styles = */
+
+.panel-home__info-box {
+  color: var(--white-color);
+  height: 15rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: #2f3041;
+  box-shadow: inset 20px 20px 60px #282937, inset -20px -20px 60px #36374b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info-box__right {
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
+
+.info-box__title {
+  font-weight: bold;
+  cursor: default;
+  font-size: 3.5rem;
+}
+
+.info-box__desc {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.info-box__symbol {
+  cursor: default;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.info-box__number {
+  font-size: 2.5rem;
+}
+
+.info-box___title-name {
+  font-weight: bold;
+}
+
+.info-box__left {
+  width: 25%;
+}
+
+.info-box__icon-wrapper {
+  width: 100%;
+}
+
+.info-box__icon {
+  width: 100%;
+}
+
+/* = Finish Header Box Styles = */
+
+/* = Start Header Last Users Styles = */
+
+.panel-home__last-users {
+  color: var(--white-color);
+  display: flex;
+  flex-flow: column;
+  gap: 1.5rem;
+}
+
+.panel-home__last-users__title {
+  word-spacing: 0.2rem;
+}
+
+.panel-home__last-users__title .hpc__title {
+  font-size: 2rem;
+}
+
+.panel-home__last-users tr {
+  font-weight: bold;
+  color: var(--primary-color);
+  border-bottom: 0.1rem solid var(--bs-primary);
+}
+
+/* = Finish Header Last Users Styles = */
+
+/* Finish Home Panel Style  */
+
+/* Finish Style Panel */
+
+/* Start Style Panel */
+@media only screen and (max-width: 768px) {
+  .panel-sidebar__wrapper {
+    display: none !important;
+  }
+
+  .hpc__part-section,
+  .panel-home__wrapper {
+    padding: 2rem 0.5rem;
+  }
+}
+/* Finish Panel Sidebar Style */
+
+/* Start Home Panel Style  */
+/* = Start Header Styles = */
+/* = Finihs Header Styles = */
+
+/* = Start Header Box Styles = */
+/* = Finish Header Box Styles = */
+
+/* = Start Header Last Users Styles = */
+/* = Finish Header Last Users Styles = */
+
+/* Finish Home Panel Style  */
+
+/* Finish Style Panel */

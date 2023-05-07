@@ -1,0 +1,13 @@
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+.hpc__part-section {
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  background-color: var(--box-color);
+}

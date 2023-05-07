@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>پنل ادمین | سبزلرن</title>
+
+    <!-- Start Src Css -->
+    <link
+      rel="stylesheet"
+      href="../../vendor/node_modules/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../vendor/node_modules/@fortawesome/fontawesome-free/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../vendor/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../vendor/node_modules/animate.css/animate.min.css"
+    />
+    <!-- <link rel="stylesheet" href="../../css/reset.css" /> -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/loader/loader.css" />
+    <link rel="stylesheet" href="../../css/defualt.css" />
+    <link rel="stylesheet" href="./css/panel.css" />
+    <link rel="stylesheet" href="./css/defualt.css" />
+
+    <!-- Finish Src Css -->
+  </head>
+  <body>
+    <!-- Start LOADER -->
+    <div class="loader-wrapper">
+      <div class="loader__banter">
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+      </div>
+    </div>
+    <!-- Finish Loader -->
+
+    <!-- Start Panel -->
+    <div class="panel">
+      <div class="panel-wrapper row">
+        <div class="col-12 col-sm-2 my-2 my-0-sm panel__sidebar">
+          <div class="panel-sidebar__wrapper">
+            <div class="panel-sidebar__title-wrapper">
+              <div class="panel-sidebar__logo hpc__noselect">
+                <div class="header-main__logo-text-wrapper">
+                  <span class="header-main__logo-text">L</span
+                  ><span class="header-main__logo-text">E</span
+                  ><span class="header-main__logo-text">G</span
+                  ><span class="header-main__logo-text">O</span>
+                </div>
+              </div>
+              <div class="panel-sidebar__menu-notif active" title="اعلانات">
+                <div class="panel-sidebar__menu-notif-img-wrapper">
+                  <img
+                    width="100%"
+                    src="./svg/main-page/outline-notification.svg"
+                    alt=""
+                  />
+                  <div
+                    class="panel-sidebar__menu-notif-count hpc__center hpc__noselect"
+                  >
+                    99+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel-sidebar__profile-wrapper">
+              <a href="" class="panel-sidebar__profile hpc__center">
+                <img
+                  class="panel-sidebar__profile-img"
+                  src="../../images/product-svg/user-comment.svg"
+                  alt=""
+                />
+                <div class="panel-sidebar__profile-name-wrapper hpc__center">
+                  <p
+                    id="profile-name"
+                    class="panel-sidebar__profile-name hpc__short-text"
+                  >
+                    Sobhan Yaghobi
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="panel-sidebar__menu-wrapper">
+              <ul class="panel-sidebar__menu">
+                <li class="panel-sidebar__list">
+                  <a href="#" class="panel-sidebar__link">
+                    <img
+                      src="svg/home.svg"
+                      alt="icon"
+                      class="panel-sidebar__link-icon"
+                    />
+                    <span class="panel-sidebar__link-text">خانه</span>
+                  </a>
+                </li>
+                <li class="panel-sidebar__list">
+                  <a
+                    href="#"
+                    class="panel-sidebar__link panel-sidebar__link-active"
+                  >
+                    <img
+                      src="svg/course.svg"
+                      alt="icon"
+                      class="panel-sidebar__link-icon"
+                    />
+                    <span class="panel-sidebar__link-text">دوره ها</span>
+                  </a>
+                </li>
+                <li class="panel-sidebar__list">
+                  <a href="#" class="panel-sidebar__link">
+                    <img
+                      src="svg/menu-board.svg"
+                      alt="icon"
+                      class="panel-sidebar__link-icon"
+                    />
+                    <span class="panel-sidebar__link-text">منو ها</span>
+                  </a>
+                </li>
+                <li class="panel-sidebar__list">
+                  <a href="#" class="panel-sidebar__link">
+                    <img
+                      src="svg/article.svg"
+                      alt="icon"
+                      class="panel-sidebar__link-icon"
+                    />
+                    <span class="panel-sidebar__link-text">مقالات</span>
+                  </a>
+                </li>
+                <li class="panel-sidebar__list">
+                  <a href="#" class="panel-sidebar__link">
+                    <img
+                      src="svg/draft.svg"
+                      alt="icon"
+                      class="panel-sidebar__link-icon"
+                    />
+                    <span class="panel-sidebar__link-text">پیش نویس ها</span>
+                  </a>
+                </li>
+                <li class="panel-sidebar__list">
+                  <a href="#" class="panel-sidebar__link">
+                    <img
+                      src="svg/users.svg"
+                      alt="icon"
+                      class="panel-sidebar__link-icon"
+                    />
+                    <span class="panel-sidebar__link-text">کاربران</span>
+                  </a>
+                </li>
+                <li class="panel-sidebar__list">
+                  <a href="#" class="panel-sidebar__link">
+                    <img
+                      src="svg/category.svg"
+                      alt="icon"
+                      class="panel-sidebar__link-icon"
+                    />
+                    <span class="panel-sidebar__link-text">دسته بندی ها</span>
+                  </a>
+                </li>
+                <li class="panel-sidebar__list">
+                  <a href="#" class="panel-sidebar__link">
+                    <img
+                      src="svg/message-text.svg"
+                      alt="icon"
+                      class="panel-sidebar__link-icon"
+                    />
+                    <span class="panel-sidebar__link-text"> پیغام ها</span>
+                  </a>
+                </li>
+                <li class="panel-sidebar__list">
+                  <a href="#" class="panel-sidebar__link">
+                    <img
+                      src="svg/receipt-discount.svg"
+                      alt="icon"
+                      class="panel-sidebar__link-icon"
+                    />
+                    <span class="panel-sidebar__link-text">کد های تخفیف</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- <div class="panel-slidebar__mobile-wrapper">
+            <div class="content">
+              <nav role="navigation">
+                <div id="menuToggle" class="active">
+                  <input type="checkbox" />
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <div id="menu-wrapper">
+                    <ul class="menu">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Info</a></li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="panel-sidebar__title-wrapper">
+                  <div class="panel-sidebar__logo hpc__noselect">
+                    <div class="header-main__logo-text-wrapper">
+                      <span class="header-main__logo-text">L</span
+                      ><span class="header-main__logo-text">E</span
+                      ><span class="header-main__logo-text">G</span
+                      ><span class="header-main__logo-text">O</span>
+                    </div>
+                  </div>
+                  <div
+                    class="panel-sidebar__menu-notif panel-sidebar__mobile-menu-notif active"
+                    title="اعلانات"
+                  >
+                    <div
+                      class="panel-sidebar__menu-notif-img-wrapper panel-sidebar__mobile-menu-notif-img-wrapper"
+                    >
+                      <img
+                        width="100%"
+                        src="./svg/main-page/outline-notification.svg"
+                        alt=""
+                      />
+                      <div
+                        class="panel-sidebar__menu-notif-count hpc__center hpc__noselect"
+                      >
+                        99+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div> -->
+        </div>
+        <div class="col-12 col-sm-10 my-2 my-0-sm panel__home">
+          <div class="panel-home__wrapper">
+            <div class="panel-home__header">
+              <h2 class="panel-home__header-title">بررسی اجمالی</h2>
+              <h3 class="panel-home__header-time-update info-timezone">
+                این ماه
+              </h3>
+            </div>
+            <div class="panel-home__info-box-wrapper">
+              <div class="row">
+                <div class="col-12 col-md-4 my-3 my-md-0">
+                  <div class="panel-home__info-box">
+                    <div class="info-box__right">
+                      <div class="info-box__title">درآمد</div>
+                      <div class="info-box__desc">
+                        <div class="info-box__income-content">
+                          <span class="info-box__income-symbol info-box__symbol"
+                            >$</span
+                          >
+                          <span class="info-box__income-number info-box__number"
+                            >2,420</span
+                          >
+                        </div>
+                        <div class="info-box__profit-content">
+                          <span class="info-box__profit-symbol info-box__symbol"
+                            >%</span
+                          >
+                          <span class="info-box__profit-numebr info-box__number"
+                            >5.2</span
+                          >
+                        </div>
+                      </div>
+                      <div class="info-box__time-update-content info-timezone">
+                        <span class="info-box___title-name">درآمد</span>
+                        <span class="info-box__time-update-name">این ماه</span>
+                      </div>
+                    </div>
+                    <div class="info-box__left">
+                      <div class="info-box__icon-wrapper">
+                        <img
+                          class="info-box__icon"
+                          src="svg/main-page/dollar.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 my-3 my-md-0">
+                  <div class="panel-home__info-box">
+                    <div class="info-box__right">
+                      <div class="info-box__title">فروش</div>
+                      <div class="info-box__desc">
+                        <div class="info-box__income-content">
+                          <span class="info-box__income-symbol info-box__symbol"
+                            >$</span
+                          >
+                          <span class="info-box__income-number info-box__number"
+                            >2,420</span
+                          >
+                        </div>
+                        <div class="info-box__profit-content">
+                          <span class="info-box__profit-symbol info-box__symbol"
+                            >%</span
+                          >
+                          <span class="info-box__profit-numebr info-box__number"
+                            >5.2</span
+                          >
+                        </div>
+                      </div>
+                      <div class="info-box__time-update-content info-timezone">
+                        <span class="info-box___title-name">فروش</span>
+                        <span class="info-box__time-update-name">این ماه</span>
+                      </div>
+                    </div>
+                    <div class="info-box__left">
+                      <div class="info-box__icon-wrapper">
+                        <img
+                          class="info-box__icon"
+                          src="svg/main-page/cashier.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 my-3 my-md-0">
+                  <div class="panel-home__info-box">
+                    <div class="info-box__right">
+                      <div class="info-box__title">هزینه</div>
+                      <div class="info-box__desc">
+                        <div class="info-box__income-content">
+                          <span class="info-box__income-symbol info-box__symbol"
+                            >$</span
+                          >
+                          <span class="info-box__income-number info-box__number"
+                            >2,420</span
+                          >
+                        </div>
+                        <div class="info-box__profit-content">
+                          <span class="info-box__profit-symbol info-box__symbol"
+                            >%</span
+                          >
+                          <span class="info-box__profit-numebr info-box__number"
+                            >5.2</span
+                          >
+                        </div>
+                      </div>
+                      <div class="info-box__time-update-content info-timezone">
+                        <span class="info-box___title-name">هزینه</span>
+                        <span class="info-box__time-update-name">این ماه</span>
+                      </div>
+                    </div>
+                    <div class="info-box__left">
+                      <div class="info-box__icon-wrapper">
+                        <img
+                          class="info-box__icon"
+                          src="svg/main-page/invoice-dollar.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel-home__chart hpc__part-section">
+              <div class="panel-home-content-chart">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div id="sale-chart"></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div id="revanue-chart"></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div id="cost-chart"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+            <div class="panel-home__last-users hpc__part-section">
+              <div class="panel-home__last-users__title">
+                <span
+                  >افراد اخیرا <span class="hpc__title">ثبت نام </span>شده</span
+                >
+              </div>
+              <div class="panel-home__users-table">
+                <table class="panel-home__table table">
+                  <thead>
+                    <tr>
+                      <th>شناسه</th>
+                      <th>نام</th>
+                      <th>نام خانوادگی</th>
+                      <th>شماره</th>
+                      <th>ایمیل</th>
+                      <th>رمز عبور</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hpc__space"></div>
+      </div>
+    </div>
+    <!-- Finish Panel -->
+
+    <script
+      defer
+      src="../../vendor/node_modules/@fortawesome/fontawesome-free/js/all.min.js"
+    ></script>
+    <script
+      defer
+      src="../../vendor/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script
+      defer
+      src="../../vendor/node_modules/chart.js/dist/chart.js"
+      type="/module"
+    ></script>
+    <script
+      defer
+      src="../../vendor/node_modules/apexcharts/dist/apexcharts.js"
+    ></script>
+    <script
+      defer
+      src="../../vendor/node_modules/swiper/swiper-bundle.min.js"
+    ></script>
+
+    <script defer src="../../js/loader.js"></script>
+    <script defer src="./js/chart.js" type="module"></script>
+    <script defer src="./js/funcs/shared.js"></script>
+  </body>
+</html>

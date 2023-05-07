@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Start Src Css -->
+    <link
+      rel="stylesheet"
+      href="vendor/node_modules/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./vendor/node_modules/@fortawesome/fontawesome-free/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./vendor/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="vendor/node_modules/animate.css/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="loader/loader.css" />
+    <link rel="stylesheet" href="css/defualt.css" />
+    <link rel="stylesheet" href="css/blog.css" />
+    <!-- Finish Src Css -->
+
+    <title>مقالات | متخصص جی اس</title>
+  </head>
+  <body>
+    <!-- Start LOADER -->
+    <div class="loader-wrapper">
+      <div class="loader__banter">
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+      </div>
+    </div>
+    <!-- Finish Loader -->
+
+    <!-- Start Header -->
+    <header class="header">
+      <div class="top-bar">
+        <div class="conatiner-fluid">
+          <div class="top-bar__content">
+            <div
+              class="top-bar__right animate__animated animate__fadeInRightBig"
+            >
+              <ul id="top-bar__course-menu" class="top-bar__menu"></ul>
+            </div>
+            <div class="top-bar__left animate__animated animate__fadeInLeftBig">
+              <div class="top-bar__email">
+                <a
+                  title="email"
+                  href=""
+                  class="top-bar__email-text top-bar__link"
+                >
+                  soobhanybi@gmail.com
+                </a>
+              </div>
+              <div class="top-bar__social-media">
+                <ul class="top-bar__social-media-menu">
+                  <li class="top-bar__item">
+                    <a
+                      title="instagram"
+                      href="#instagram"
+                      class="top-bar__social-link-icon top-bar__link"
+                    >
+                      <i class="fa-brands fa-instagram top-bar__instagram-icon">
+                      </i>
+                    </a>
+                  </li>
+                  <li class="top-bar__item">
+                    <a
+                      title="telegram"
+                      href="#telegram"
+                      class="top-bar__social-link-icon top-bar__link"
+                    >
+                      <i class="fa-brands fa-telegram top-bar__telegram-icon">
+                      </i>
+                    </a>
+                  </li>
+                  <li class="top-bar__item">
+                    <a
+                      title="youtube"
+                      href="#youtube"
+                      class="top-bar__social-link-icon top-bar__link"
+                    >
+                      <i class="fa-brands fa-youtube top-bar__youtube-icon">
+                      </i>
+                    </a>
+                  </li>
+                  <li class="top-bar__item">
+                    <a
+                      title="twitter"
+                      href="#twitter"
+                      class="top-bar__social-link-icon top-bar__link"
+                    >
+                      <i class="fa-brands fa-twitter top-bar__twitter-icon">
+                      </i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-header">
+        <div class="container-fluid">
+          <div class="main-header__content">
+            <div class="main-header__mobile-menu">
+              <li id="main-header__mobile-menu-btn" class="main-header__item">
+                <a href="#" class="main-header__link">
+                  <i class="fa-solid fa-bars main-header__menu-small-icon"></i>
+                </a>
+                <div class="mobile-menu__dropdown-wrapper">
+                  <button
+                    id="closeDropDownBtn"
+                    title="close"
+                    class="mobile-menu__close-dropdown d-flex align-items-center"
+                  >
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                  <ul class="mobile-menu__dropdown">
+                    <li class="main-header__item">
+                      <div class="mobile-menu__searchbar global__searchbar">
+                        <input
+                          type="text"
+                          class="main-header___search-input global__search-input"
+                          placeholder="جستجو..."
+                        />
+                        <button
+                          class="main-header__search-btn global__search-btn"
+                        >
+                          <i
+                            class="fa-solid fa-magnifying-glass main-header__serach-icon global__search-icon"
+                          ></i>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="main-header__item">
+                      <a href="#" class="main-header__link">فرانت اند</a>
+                    </li>
+                    <li class="main-header__item">
+                      <a href="#" class="main-header__link">امنیت</a>
+                    </li>
+                    <li class="main-header__item">
+                      <a href="#" class="main-header__link"> مقالات </a>
+                    </li>
+                    <li class="main-header__item">
+                      <a href="#" class="main-header__link">پایتون</a>
+                    </li>
+                    <li class="main-header__item">
+                      <a href="#" class="main-header__link">مهارت های نرم</a>
+                    </li>
+                    <li class="main-header__item">
+                      <a href="#" class="main-header__link">فروشگاه</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </div>
+            <div
+              class="main-header__right animate__animated animate__fadeInRightBig"
+            >
+              <div class="main-header__logo">
+                <div class="header-main__logo-text-wrapper">
+                  <span class="header-main__logo-text">L</span
+                  ><span class="header-main__logo-text">E</span
+                  ><span class="header-main__logo-text">G</span
+                  ><span class="header-main__logo-text">O</span>
+                </div>
+              </div>
+              <ul
+                id="menu__wrapper"
+                class="main-header__menu main-header__course-menu"
+              ></ul>
+              <div class="main-header__search-wrapper">
+                <div
+                  id="main-header__searchbar"
+                  class="main-header__searchbar global__searchbar"
+                >
+                  <input
+                    type="text"
+                    id="main-header__search-input"
+                    class="main-header___search-input global__search-input"
+                    placeholder="جستجو..."
+                  />
+                  <button class="main-header__search-btn global__search-btn">
+                    <i
+                      class="fa-solid fa-magnifying-glass main-header__serach-icon global__search-icon"
+                    ></i>
+                  </button>
+                </div>
+                <div
+                  id="auto-search-box"
+                  class="main-header___auto-search-box"
+                ></div>
+              </div>
+            </div>
+            <div
+              class="main-header__left animate__animated animate__fadeInLeftBig"
+            >
+              <ul class="main-header__menu">
+                <li class="main-header__item">
+                  <a
+                    href="#"
+                    id="header__profile"
+                    class="main-header__link main-header__profile"
+                  >
+                  </a>
+                </li>
+                <li class="main-header__item">
+                  <a
+                    href="#"
+                    class="main-header__link main-header__cart-shopping"
+                  >
+                    <div class="main-header__icon-wrapper">
+                      <i
+                        class="fa-solid fa-wallet main-header__cart-shop-icon"
+                      ></i>
+                    </div>
+                    <ul class="main-header__dropdown">
+                      <li class="main-header__item">
+                        محصولی در سبد خرید موجود نیست
+                      </li>
+                    </ul>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Finish Header -->
+
+    <!-- Start Breadcrumb -->
+    <div class="breadcrumb hpc__section">
+      <div class="container">
+        <div class="breadcrumb__contnet d-flex justify-content-lg-between row">
+          <div
+            class="col-12 col-md-7 d-flex justify-content-center justify-content-md-start"
+          >
+            <h2
+              class="breadcrumb__title animate__animated animate__fadeInLeftBig"
+            >
+              آموزش Html
+            </h2>
+          </div>
+          <div
+            class="col-12 col-md-5 d-flex justify-content-center justify-content-md-end"
+          >
+            <ul
+              class="breadcrumb__list d-flex align-items-center animate__animated animate__fadeInRightBig"
+            >
+              <li class="breadcrumb__item">
+                <a
+                  href="index.html"
+                  class="breadcrumb__link breadcrumb__link--home"
+                >
+                  خانه
+                </a>
+                <span>/</span>
+              </li>
+              <li class="breadcrumb__item">
+                <a
+                  href="category.html"
+                  class="breadcrumb__link breadcrumb__link--destination"
+                >
+                  مقالات
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Finish Breadcrumb -->
+
+    <!-- Start Main -->
+    <main class="main">
+      <div class="container">
+        <div class="row main__row">
+          <div class="col-12 col-md-8">
+            <div class="main__content">
+              <div class="article">
+                <div class="article__header">
+                  <div class="article-header__img-wrapper">
+                    <img
+                      src="images/blog/html.png"
+                      alt="html"
+                      class="article-hader__img img-fluid"
+                    />
+                  </div>
+                  <div class="article-header__category">
+                    <ul class="article-header__category-list">
+                      <li
+                        class="article-header__category-item hpc__category-item"
+                      >
+                        <a href="#" class="article-header__link">
+                          اچ تی ام ال
+                        </a>
+                      </li>
+                      <li
+                        class="article-header__category-item hpc__category-item"
+                      >
+                        <a href="#" class="article-header__link">
+                          طراحی سایت
+                        </a>
+                      </li>
+                      <li
+                        class="article-header__category-item hpc__category-item"
+                      >
+                        <a href="#" class="article-header__link"> سی اس اس </a>
+                      </li>
+                      <li
+                        class="article-header__category-item hpc__category-item"
+                      >
+                        <a href="#" class="article-header__link"
+                          >جاوا اسکریپت
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <h1 class="article-header__title">کد پاپ آپ Html</h1>
+                  <div class="hpc__entry-divider"></div>
+                  <div class="article-header__article-info">
+                    <div class="article-info__author">
+                      <span class="article-info__author-name">نویسنده :</span>
+                      <span class="article-info__author-text"
+                        >محمد امین سعیدی راد</span
+                      >
+                    </div>
+                    <div class="article-info__published">
+                      <span class="article-info__published-name"
+                        >تاریخ انتشار:</span
+                      >
+                      <span class="article-info__published-text">
+                        2022/01/09
+                      </span>
+                    </div>
+                  </div>
+                  <p class="article-header__desc hpc__paragrapg">
+                    کد پاپ آپ Html اگر با وب سایت های مختلف سر و کار داشته باشید
+                    و روزانه به وب سایت های متفاوتی مراجعه کنید، قطعا یک باکسی
+                    (Box) مشاهده کرده اید که برای نمایش پیغام خاصی باز می شود.
+                    به همین باکس یا صفحه ای که برای نمایش پیغام یا اطلاعیه خاصی
+                    باز می شود، پاپ آپ گفته می شود که در وب سایت های مختلف می
+                    تواند کاربرد های جالبی داشته باشد. همچنین دوره اموزش HTML رو
+                    میتونید از طریق وب سایت سبزلرن به صورت کامل اموزش ببینید .
+                  </p>
+                </div>
+                <div class="article__read-box">
+                  <h2
+                    class="read-box__title animate__animated animate__flash animate__infinite"
+                  >
+                    آنچه در این مقاله خواهید خواند
+                  </h2>
+                  <ul class="article__read-box-list">
+                    <li class="article__read-box-item">
+                      <a href="#" class="article__read-box-link">
+                        <span class="read-box-link__count">1</span>
+                        <span class="read-box-link__text"
+                          >پاپ آپ چیست و چطور ساخته می شود؟</span
+                        >
+                      </a>
+                    </li>
+                    <li class="article__read-box-item">
+                      <a href="#" class="article__read-box-link">
+                        <span class="read-box-link__count">2</span>
+                        <span class="read-box-link__text">
+                          چرا به پاپ آپ نیاز داریم؟
+                        </span>
+                      </a>
+                    </li>
+                    <li class="article__read-box-item">
+                      <a href="#" class="article__read-box-link">
+                        <span class="read-box-link__count">3</span>
+                        <span class="read-box-link__text">
+                          پاپ آپ های ساده با زبان جاوا اسکریپت
+                        </span>
+                      </a>
+                    </li>
+                    <li class="article__read-box-item">
+                      <a href="#" class="article__read-box-link">
+                        <span class="read-box-link__count">4</span>
+                        <span class="read-box-link__text"
+                          >تکه کد پاپ آپ Html و Css</span
+                        >
+                      </a>
+                    </li>
+                    <li class="article__read-box-item">
+                      <a href="#" class="article__read-box-link">
+                        <span class="read-box-link__count">5</span>
+                        <span class="read-box-link__text"
+                          >کد پاپ آپ Html و Css با استفاده از کتابخانه ها</span
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <section class="article__section">
+                  <p class="article__paragrapg hpc__paragrapg">
+                    در این مقاله سورس کد پاپ آپ Html را به روش های مختلفی پیاده
+                    سازی پیاده سازی می کنیم تا شما عزیزان بتوانید در وب سایت
+                    هایی که توسعه می دهید، در صورت نیاز از پاپ آپ های مختلفی
+                    استفاده بکنید.
+                  </p>
+                </section>
+                <section class="article__section">
+                  <img
+                    src="images/blog/code-pop.png"
+                    alt="blog"
+                    class="img-fluid article__img"
+                  />
+
+                  <p class="article__paragrapg-title">
+                    پاپ آپ چیست و چطور ساخته می شود؟
+                  </p>
+                  <p class="article__paragrapg">
+                    همان طور که در قسمت قبلی گفته شد، پاپ آپ (Pop Up) همان پنجره
+                    ها و باکس هایی است که در هر وب سایتی برای نمایش اطلاعیه،
+                    پیغام و خبر خاصی به کاربر استفاده می شود.
+                  </p>
+                  <p class="article__paragrapg">
+                    در حوزه برنامه نویسی وب، می توان پاپ آپ ها را به کمک زبان
+                    های Html و Css طراحی کرد و سپس با زبان برنامه نویسی جاوا
+                    اسکریپت در هر زمان و موقعیت دلخواهی آن ها را نمایش داد.
+                  </p>
+                </section>
+                <section class="article__section">
+                  <p class="article__paragrapg-title">
+                    چرا به پاپ آپ نیاز داریم؟
+                  </p>
+                  <p class="article__paragrapg">
+                    در هر کدام از وب سایت های فروشگاهی، آموزشی، مجله ای و … ممکن
+                    است در موقعیت ها و شرایط خاصی نیاز داشته باشید که اطلاعیه یا
+                    پیغام خاصی را به کاربر نمایش دهید. در همچین حالتی اگر در
+                    همان تب (Tab) که کاربر به وب سایت شما مراجعه کرده است صفحه
+                    ای دیگر باز کنید، کاربر محتوای اصلی وب سایت را از دست داده و
+                    کمی از وب سایتتان دلخور و ناراحت می شود. برای مواجه نشدن با
+                    همچین مشکلی، از صفحات پاپ آپ استفاده می کنیم.
+                  </p>
+                  <p class="article__paragrapg">
+                    اما توجه داشته باشید که استفاده بیش از حد از صفحات پاپ آپ
+                    نارضایتی و اعتراض کاربران را به دنبال دارد. حتی کاربران به
+                    آن دسته از وب سایت هایی که استفاده زیادی از پاپ آپ می کنند
+                    علاقه ای نداشته و حد الامکان سعی می کنند به آن ها مراجعه
+                    نکنند. پس سعی کنید استفاده صفحات پاپ آپ را به حداقل برسانید
+                    و تا زمانی که به پاپ آپ نیازی نداشتید، از آن استفاده نکنید.
+                  </p>
+                </section>
+                <section class="article__section">
+                  <p class="article__paragrapg-title">
+                    پاپ آپ های ساده با زبان جاوا اسکریپت
+                  </p>
+                  <p class="article__paragrapg">
+                    شما با زبان برنامه نویسی جاوا اسکریپت خالی (خام و بدون
+                    استفاده از کتابخانه یا فریمورک) نیز می توانید پاپ آپ هایی را
+                    پیاده سازی کنید، اما پاپ آپ های بسیار ساده و خشک. جاوا
+                    اسکریپت برای ساخت پاپ آپ 3 متد alert، confirm و prompt را در
+                    اختیار شما قرار می دهد که در ادامه به نحوه استفاده از هر
+                    کدام می پردازیم.
+                  </p>
+
+                  <p class="article__paragrapg-sub">
+                    متد alert برای ساخت پاپ آپ
+                  </p>
+                  <p class="article__paragrapg">
+                    متد alert از شما یک مقداری را به عنوان ورودی دریافت کرده و
+                    آن را در یک باکس خشک و خالی نمایش می دهد:
+                  </p>
+                  <pre class="article__paragrapg-pre">
+  ("پیام مورد نظر را اینجا وارد کنید")alert</pre
+                  >
+
+                  <p class="article__paragrapg-sub">
+                    با اجرای متد alert صفحه ای مثل تصویر زیر به کاربر نمایش داده
+                    می شود:
+                  </p>
+
+                  <img
+                    src="images/blog/pp1.png"
+                    alt="pp1"
+                    class="img-fluid article__img-sub"
+                  />
+                  <p class="article__paragrapg-sub">
+                    متد confirm برای ساخت پاپ آپ
+                  </p>
+                  <p class="article__paragrapg">
+                    از متد confirm زمانی استفاده می شود که قصد داشته باشید سوالی
+                    را از کاربر بپرسید که جواب آن فقط “بله” یا “خیر” باشد که
+                    اصطلاحا به این دسته از سوالات Yes / No Question گفته می شود.
+                    متد confirm نیز مثل متد alert یک مقداری (سوالی) را از شما
+                    دریافت کرده و آن را همراه با دکمه هایی Ok و Cancel به کاربر
+                    نمایش می دهد که کاربر می تواند یکی از دکمه ها را به عنوان
+                    پاسخ انتخاب کند:
+                  </p>
+                  <img
+                    src="images/blog/pp2.png"
+                    alt="pp2"
+                    class="article__img-sub"
+                  />
+                  <p class="article__paragrapg-sub">
+                    متد prompt برای ساخت پاپ آپ
+                  </p>
+                  <p class="article__paragrapg">
+                    متد prompt نیز یکی از متد های نمایش پاپ آپ است و زمانی
+                    استفاده می شود که قصد دریافت اطلاعاتی مثل نام، سن، آدرس،
+                    شماره تماس و … از کاربر را داشته باشیم. پس در این روش یک
+                    اینپوت هم برای وارد کردن اطلاعات به کاربر نمایش داده می شود.
+                  </p>
+                  <p class="article__paragrapg">
+                    متد prompt دو عدد ورودی دارد که اولی عنوان یا همان تایتل پاپ
+                    آپ است و ورودی دوم آن مقدار دیفالت (پیش فرض) است:
+                  </p>
+
+                  <pre class="article__paragrapg-pre">
+  prompt('Please Enter Your Age: ', 18)</pre
+                  >
+                </section>
+                <section class="article__section">
+                  <p class="article__paragrapg-sub">سخن پایانی</p>
+
+                  <p class="article__paragrapg">
+                    در این مقاله سعی کردیم در مورد نحوه نوشتن کد پاپ آپ Html Css
+                    و همچنان جاوا اسکریپت و نحوه استفاده از آن صحبت کنیم و
+                    امیدواریم برای شما عزیزان مفید بوده باشد. برای درک بهتر این
+                    مفاهیم، پیشنهاد می کنم ویدئوی مربوط به این مقاله را مطالعه
+                    کرده و در صورت وجود هر گونه ابهام و سوال، برامون کامنت کنید.
+                  </p>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="courses-info">
+              <!-- Start Course Info -->
+              <div class="course-info">
+                <span class="course-info__courses-title hpc__title">
+                  پر امتیازترین دوره ها
+                </span>
+                <ul class="course-info__courses-list">
+                  <li class="course-info__courses-item">
+                    <a
+                      href="#"
+                      class="course-info__course-high-score-link course-info__courses-link"
+                    >
+                      <div class="course-info__courses-img-wrapper">
+                        <img
+                          src="images/courses/git-github.jpg"
+                          alt="Course Cover"
+                          class="course-info__courses-img"
+                        />
+                      </div>
+
+                      <span class="course-info__courses-text">
+                        گیت و گیتهاب
+                      </span>
+                    </a>
+                  </li>
+                  <li class="course-info__courses-item">
+                    <a
+                      href="#"
+                      class="course-info__course-high-score-link course-info__courses-link"
+                    >
+                      <div class="course-info__courses-img-wrapper">
+                        <img
+                          src="images/courses/next-js.png"
+                          alt="Course Cover"
+                          class="course-info__courses-img"
+                        />
+                      </div>
+
+                      <span class="course-info__courses-text">
+                        آموزش next js
+                      </span>
+                    </a>
+                  </li>
+                  <li class="course-info__courses-item">
+                    <a
+                      href="#"
+                      class="course-info__course-high-score-link course-info__courses-link"
+                    >
+                      <div class="course-info__courses-img-wrapper">
+                        <img
+                          src="images/courses/node-js.jpg"
+                          alt="Course Cover"
+                          class="course-info__courses-img"
+                        />
+                      </div>
+
+                      <span class="course-info__courses-text">
+                        آموزش node js
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Finish Course Info -->
+
+              <!-- Start Course Info -->
+              <div class="course-info">
+                <span
+                  class="course-info__courses-title hpc__title animate__animated animate__flash animate__infinite"
+                  >جدیدترین مقالات</span
+                >
+                <ul class="last-articles__list course-info__courses-list">
+                  <li class="last-articles__item course-info__courses-item">
+                    <a
+                      href="#"
+                      class="last-articles__link course-info__courses-link"
+                      >جدیدترین مقالات جاوااسکریپت نحوه پیاده سازی قالب
+                      سبزلرن</a
+                    >
+                  </li>
+                  <li class="last-articles__item course-info__courses-item">
+                    <a
+                      href="#"
+                      class="last-articles__link course-info__courses-link"
+                      >جدیدترین مقالات جاوااسکریپت نحوه پیاده سازی قالب
+                      سبزلرن</a
+                    >
+                  </li>
+                  <li class="last-articles__item course-info__courses-item">
+                    <a
+                      href="#"
+                      class="last-articles__link course-info__courses-link"
+                      >جدیدترین مقالات جاوااسکریپت نحوه پیاده سازی قالب
+                      سبزلرن</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- Finish Course Info -->
+
+              <!-- Start Course Info -->
+              <!-- <div class="course-info">
+                <span class="course-info__courses-title hpc__title"
+                  >دسته بندی مقالات</span
+                >
+                <ul class="sidebar-articles__list">
+                  <li class="sidebar-articles__item course-info__courses-item">
+                    <i
+                      class="fas fa-angle-left sidebar-articles__icon course-info__courses-icon"
+                    ></i>
+                    <a
+                      href="#"
+                      class="sidebar-articles__link course-info__courses-link"
+                    >
+                      اچ تی ام ال
+                    </a>
+                  </li>
+                  <li class="sidebar-articles__item course-info__courses-item">
+                    <i
+                      class="fas fa-angle-left sidebar-articles__icon course-info__courses-icon"
+                    ></i>
+                    <a
+                      href="#"
+                      class="sidebar-articles__link course-info__courses-link"
+                    >
+                      بوت استرپ
+                    </a>
+                  </li>
+                  <li class="sidebar-articles__item course-info__courses-item">
+                    <i
+                      class="fas fa-angle-left sidebar-articles__icon course-info__courses-icon"
+                    ></i>
+                    <a
+                      href="#"
+                      class="sidebar-articles__link course-info__courses-link"
+                    >
+                      پروژه برنامه نویس
+                    </a>
+                  </li>
+                  <li class="sidebar-articles__item course-info__courses-item">
+                    <i
+                      class="fas fa-angle-left sidebar-articles__icon course-info__courses-icon"
+                    ></i>
+                    <a
+                      href="#"
+                      class="sidebar-articles__link course-info__courses-link"
+                    >
+                      تست امنیت وب
+                    </a>
+                  </li>
+                  <li class="sidebar-articles__item course-info__courses-item">
+                    <i
+                      class="fas fa-angle-left sidebar-articles__icon course-info__courses-icon"
+                    ></i>
+                    <a
+                      href="#"
+                      class="sidebar-articles__link course-info__courses-link"
+                    >
+                      جی کوعری
+                    </a>
+                  </li>
+                  <li class="sidebar-articles__item course-info__courses-item">
+                    <i
+                      class="fas fa-angle-left sidebar-articles__icon course-info__courses-icon"
+                    ></i>
+                    <a
+                      href="#"
+                      class="sidebar-articles__link course-info__courses-link"
+                    >
+                      ریکت جی اس
+                    </a>
+                  </li>
+                  <li class="sidebar-articles__item course-info__courses-item">
+                    <i
+                      class="fas fa-angle-left sidebar-articles__icon course-info__courses-icon"
+                    ></i>
+                    <a
+                      href="#"
+                      class="sidebar-articles__link course-info__courses-link"
+                    >
+                      سی اس اس
+                    </a>
+                  </li>
+                  <li class="sidebar-articles__item course-info__courses-item">
+                    <i
+                      class="fas fa-angle-left sidebar-articles__icon course-info__courses-icon"
+                    ></i>
+                    <a
+                      href="#"
+                      class="sidebar-articles__link course-info__courses-link"
+                    >
+                      شروع برنامه نویسی
+                    </a>
+                  </li>
+                  <li class="sidebar-articles__item course-info__courses-item">
+                    <i
+                      class="fas fa-angle-left sidebar-articles__icon course-info__courses-icon"
+                    ></i>
+                    <a
+                      href="#"
+                      class="sidebar-articles__link course-info__courses-link"
+                    >
+                      طراحی سایت
+                    </a>
+                  </li>
+                  <li class="sidebar-articles__item course-info__courses-item">
+                    <i
+                      class="fas fa-angle-left sidebar-articles__icon course-info__courses-icon"
+                    ></i>
+                    <a
+                      href="#"
+                      class="sidebar-articles__link course-info__courses-link"
+                    >
+                      ویو جی اس
+                    </a>
+                  </li>
+                </ul>
+              </div> -->
+              <!-- Finish Course Info -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Finish Main -->
+
+    <!-- Start Footer -->
+    <div class="footer hpc__section">
+      <div class="container">
+        <div class="footer__desc">
+          <div class="row">
+            <div class="col-12">
+              <h4 class="footer__desc-title hpc__title">
+                ضمانت سبز لرن برای کلیه محصولات آموزشی
+              </h4>
+              <p class="footer__desc-text">
+                وقتی تازه شروع به یادگیری برنامه نویسی کردم. یکی از مشکلاتی که
+                در فرآیند یادگیری داشتم، کمبود آموزش های خوب با پشتیبانی قابل
+                قبول بود که باعث شد اون موقع تصمیم بگیرم اگر روزی توانایی مالی و
+                فنی قابل قبولی داشتم یک وب سایت برای حل این مشکل راه اندازی کنم!
+                و خب امروز آکادمی آموزش برنامه نویسی سبزلرن به عنوان یک آکادمی
+                خصوصی فعالیت میکنه و این به این معنی هست که هر مدرسی اجازه تدریس
+                در اون رو نداره و باید از فیلترینگ های خاص آکادمی سبزلرن رد شه!
+                این به این معنی هست که ما برامون فن بیان و نحوه تعامل مدرس با
+                دانشجو بسیار مهمه! ما در آکادمی سبزلرن تضمین پشتیبانی خوب و با
+                کیفیت رو به شما میدیم . چرا که مدرسین وب سایت سبزلرن حتی برای
+                پشتیبانی دوره های رایگان شون هم هزینه دریافت میکنند و متعهد
+                هستند که هوای کاربر های عزیز رو داشته باشند
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer__widget">
+          <div class="row">
+            <div class="col-sm-12 col-lg-3 footer-widget__quick-access">
+              <div class="row">
+                <div class="col-6">
+                  <div class="footer__widget-item">
+                    <a href="#">
+                      فروشگاه
+                      <span class="hpc__popular">محبوب</span>
+                    </a>
+                  </div>
+                  <div class="footer__widget-item">
+                    <a href="#"> ارتباط با ما </a>
+                  </div>
+                  <div class="footer__widget-item">
+                    <a href="#"> دربـــاره ما </a>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="footer__widget-item">
+                    <a class="footer-widget__link" href="#"> مقالات</a>
+                  </div>
+                  <div class="footer__widget-item">
+                    <a class="footer-widget__link" href="#">
+                      قوانین و مقررات
+                    </a>
+                  </div>
+                  <div class="footer__widget-item">
+                    <a class="footer-widget__link" href="#"
+                      >پایتون
+                      <span class="hpc__new">جدید</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-3 footer-widget__working-hours">
+              <h3 class="footer-widget__title">ساعات کاری</h3>
+              <div class="footer-widget__text">
+                <p class="row">شنبه تا چهارشنبه 8 صبح تا 18 عصر</p>
+                <p class="row">پنج شنبه‌ها ساعت 8 صبح تا 12 ظهر</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 footer-widget__contact-us">
+              <h3 class="footer-widget__title">ارتباط با ما</h3>
+              <div class="footer-widget__text">
+                <div class="row">
+                  <span class="footer-widget-email-name col-4"> ایمیل </span>
+                  <span class="footer-widget-email-adress col-8">
+                    <a href="#" class=""> soobhanybi@gmail.com </a>
+                  </span>
+                </div>
+                <div class="row">
+                  <span class="footer-widget-phone-name col-4"
+                    >شماره همراه</span
+                  >
+                  <span class="footer-widget-phone-number col-8"
+                    >09396007232</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 footer-widget__trust-symbol">
+              <div class="footer-widget__namda-box">
+                <a
+                  class="footer-widget__link"
+                  href="https://trustseal.enamad.ir/?id=274698&code=HYeEYWQTRWrm1YcxgLhn"
+                >
+                  <img src="images/namad/enamad-two-star.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row footer__copyright">
+          <p>
+            این قالب صرفا جهت نمونه کار است و از سایت
+            <a href="https://sabzlearn.ir/" class="footer__link hpc__popular"
+              >سبزلرن</a
+            >
+            میباشد
+          </p>
+        </div>
+      </div>
+      <div class="footer__animation">
+        <div class="particles">
+          <span style="--delay: 18"></span>
+          <span style="--delay: 25"></span>
+          <span style="--delay: 14"></span>
+          <span style="--delay: 16"></span>
+          <span style="--delay: 10"></span>
+          <span style="--delay: 12"></span>
+          <span style="--delay: 19"></span>
+          <span style="--delay: 22"></span>
+          <span style="--delay: 23"></span>
+          <span style="--delay: 18"></span>
+          <span style="--delay: 25"></span>
+          <span style="--delay: 14"></span>
+          <span style="--delay: 16"></span>
+          <span style="--delay: 10"></span>
+          <span style="--delay: 12"></span>
+          <span style="--delay: 19"></span>
+          <span style="--delay: 22"></span>
+          <span style="--delay: 23"></span>
+          <span style="--delay: 18"></span>
+          <span style="--delay: 2"></span>
+          <span style="--delay: 14"></span>
+          <span style="--delay: 6"></span>
+          <span style="--delay: 1"></span>
+          <span style="--delay: 12"></span>
+          <span style="--delay: 19"></span>
+          <span style="--delay: 22"></span>
+          <span style="--delay: 23"></span>
+          <span style="--delay: 18"></span>
+          <span style="--delay: 28"></span>
+          <span style="--delay: 14"></span>
+          <span style="--delay: 6"></span>
+          <span style="--delay: 10"></span>
+          <span style="--delay: 2"></span>
+          <span style="--delay: 19"></span>
+          <span style="--delay: 22"></span>
+          <span style="--delay: 23"></span>
+        </div>
+      </div>
+    </div>
+    <!-- Finish Footer -->
+
+    <!-- Start Script SRC -->
+    <script defer src="vendor/gsap(no-npm)/gsap/gsap.min.js"></script>
+    <script defer src="vendor/gsap(no-npm)/gsap/zepto.min.js"></script>
+    <script
+      defer
+      src="vendor/node_modules/@fortawesome/fontawesome-free/js/all.min.js"
+    ></script>
+    <script
+      defer
+      src="vendor/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script
+      defer
+      src="vendor/node_modules/vanilla-tilt/dist/vanilla-tilt.js"
+    ></script>
+    <script
+      defer
+      src="vendor/node_modules/swiper/swiper-bundle.min.js"
+    ></script>
+    <script src="./js/loader.js"></script>
+    <script defer src="./js/slider.js"></script>
+    <script defer src="./js/gsap.js"></script>
+
+    <script src="js/shared.js" type="module"></script>
+
+    <!-- Finish Script SRC -->
+  </body>
+</html>
