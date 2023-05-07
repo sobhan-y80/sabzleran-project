@@ -52,7 +52,7 @@
     <!-- Start Panel -->
     <div class="panel">
       <div class="panel-wrapper row">
-        <div class="col-12 col-sm-2 my-2 my-0-sm panel__sidebar">
+        <div class="col-12 col-lg-2 my-2 my-0-lg panel__sidebar">
           <div class="panel-sidebar__wrapper">
             <div class="panel-sidebar__title-wrapper">
               <div class="panel-sidebar__logo hpc__noselect">
@@ -193,24 +193,150 @@
               </ul>
             </div>
           </div>
-          <!-- <div class="panel-slidebar__mobile-wrapper">
+          <div class="panel-slidebar__mobile-wrapper">
             <div class="content">
               <nav role="navigation">
-                <div id="menuToggle" class="active">
-                  <input type="checkbox" />
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <div id="menu-wrapper">
-                    <ul class="menu">
-                      <li><a href="#">Home</a></li>
-                      <li><a href="#">About</a></li>
-                      <li><a href="#">Info</a></li>
-                      <li><a href="#">Contact</a></li>
-                    </ul>
-                  </div>
+                <div id="menuToggle" class="hpc__center hpc__noselect">
+                  <input id="toggleMenuInput" type="checkbox" />
+                  <span class="mobile-menu-line"></span>
+                  <span class="mobile-menu-line"></span>
+                  <span class="mobile-menu-line"></span>
                 </div>
-                <div class="panel-sidebar__title-wrapper">
+                <div id="menu-wrapper">
+                  <ul class="menu">
+                    <div class="panel-sidebar__profile-wrapper">
+                      <a href="" class="panel-sidebar__profile hpc__center">
+                        <img
+                          class="panel-sidebar__profile-img"
+                          src="../../images/product-svg/user-comment.svg"
+                          alt=""
+                        />
+                        <div
+                          class="panel-sidebar__profile-name-wrapper hpc__center"
+                        >
+                          <p
+                            id="profile-name"
+                            class="panel-sidebar__profile-name hpc__short-text"
+                          >
+                            Sobhan Yaghobi
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="panel-sidebar__menu-wrapper">
+                      <ul class="panel-sidebar__menu">
+                        <li class="panel-sidebar__list">
+                          <a href="#" class="panel-sidebar__link">
+                            <img
+                              src="svg/home.svg"
+                              alt="icon"
+                              class="panel-sidebar__link-icon"
+                            />
+                            <span class="panel-sidebar__link-text">خانه</span>
+                          </a>
+                        </li>
+                        <li class="panel-sidebar__list">
+                          <a
+                            href="#"
+                            class="panel-sidebar__link panel-sidebar__link-active"
+                          >
+                            <img
+                              src="svg/course.svg"
+                              alt="icon"
+                              class="panel-sidebar__link-icon"
+                            />
+                            <span class="panel-sidebar__link-text"
+                              >دوره ها</span
+                            >
+                          </a>
+                        </li>
+                        <li class="panel-sidebar__list">
+                          <a href="#" class="panel-sidebar__link">
+                            <img
+                              src="svg/menu-board.svg"
+                              alt="icon"
+                              class="panel-sidebar__link-icon"
+                            />
+                            <span class="panel-sidebar__link-text">منو ها</span>
+                          </a>
+                        </li>
+                        <li class="panel-sidebar__list">
+                          <a href="#" class="panel-sidebar__link">
+                            <img
+                              src="svg/article.svg"
+                              alt="icon"
+                              class="panel-sidebar__link-icon"
+                            />
+                            <span class="panel-sidebar__link-text">مقالات</span>
+                          </a>
+                        </li>
+                        <li class="panel-sidebar__list">
+                          <a href="#" class="panel-sidebar__link">
+                            <img
+                              src="svg/draft.svg"
+                              alt="icon"
+                              class="panel-sidebar__link-icon"
+                            />
+                            <span class="panel-sidebar__link-text"
+                              >پیش نویس ها</span
+                            >
+                          </a>
+                        </li>
+                        <li class="panel-sidebar__list">
+                          <a href="#" class="panel-sidebar__link">
+                            <img
+                              src="svg/users.svg"
+                              alt="icon"
+                              class="panel-sidebar__link-icon"
+                            />
+                            <span class="panel-sidebar__link-text"
+                              >کاربران</span
+                            >
+                          </a>
+                        </li>
+                        <li class="panel-sidebar__list">
+                          <a href="#" class="panel-sidebar__link">
+                            <img
+                              src="svg/category.svg"
+                              alt="icon"
+                              class="panel-sidebar__link-icon"
+                            />
+                            <span class="panel-sidebar__link-text"
+                              >دسته بندی ها</span
+                            >
+                          </a>
+                        </li>
+                        <li class="panel-sidebar__list">
+                          <a href="#" class="panel-sidebar__link">
+                            <img
+                              src="svg/message-text.svg"
+                              alt="icon"
+                              class="panel-sidebar__link-icon"
+                            />
+                            <span class="panel-sidebar__link-text">
+                              پیغام ها</span
+                            >
+                          </a>
+                        </li>
+                        <li class="panel-sidebar__list">
+                          <a href="#" class="panel-sidebar__link">
+                            <img
+                              src="svg/receipt-discount.svg"
+                              alt="icon"
+                              class="panel-sidebar__link-icon"
+                            />
+                            <span class="panel-sidebar__link-text"
+                              >کد های تخفیف</span
+                            >
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </ul>
+                </div>
+                <div
+                  class="panel-sidebar__title-wrapper panel-sidebar__mobile-title-wrapper"
+                >
                   <div class="panel-sidebar__logo hpc__noselect">
                     <div class="header-main__logo-text-wrapper">
                       <span class="header-main__logo-text">L</span
@@ -224,10 +350,10 @@
                     title="اعلانات"
                   >
                     <div
-                      class="panel-sidebar__menu-notif-img-wrapper panel-sidebar__mobile-menu-notif-img-wrapper"
+                      class="panel-sidebar__menu-notif-img-wrapper panel-sidebar__mobile-menu-notif-img-wrapper hpc__center"
                     >
                       <img
-                        width="100%"
+                        height="100%"
                         src="./svg/main-page/outline-notification.svg"
                         alt=""
                       />
@@ -241,9 +367,9 @@
                 </div>
               </nav>
             </div>
-          </div> -->
+          </div>
         </div>
-        <div class="col-12 col-sm-10 my-2 my-0-sm panel__home">
+        <div class="col-12 col-lg-10 my-2 my-0-lg panel__home">
           <div class="panel-home__wrapper">
             <div class="panel-home__header">
               <h2 class="panel-home__header-title">بررسی اجمالی</h2>
@@ -411,7 +537,6 @@
             </div>
           </div>
         </div>
-        <div class="hpc__space"></div>
       </div>
     </div>
     <!-- Finish Panel -->
@@ -441,5 +566,6 @@
     <script defer src="../../js/loader.js"></script>
     <script defer src="./js/chart.js" type="module"></script>
     <script defer src="./js/funcs/shared.js"></script>
+    <script defer src="./js/main.js"></script>
   </body>
 </html>
