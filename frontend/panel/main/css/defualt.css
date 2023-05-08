@@ -6,6 +6,12 @@
   background: var(--primary-color);
 }
 
+.login-form__input-title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--text-main-header-color);
+}
+
 .hpc__part-section {
   padding: 2rem 1.5rem;
   border-radius: 1rem;

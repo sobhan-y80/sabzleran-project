@@ -52,12 +52,12 @@
 
 .panel-sidebar__menu-notif-count {
   cursor: default;
-  color: var(--white-color);
+  color: var(--dark-color);
   font-size: 2rem;
   font-weight: bold;
   width: 3rem;
   height: 3rem;
-  border: 0.2rem solid var(--bs-primary);
+  border: 0.2rem solid var(--white-color);
   border-radius: 50%;
   top: -1.1rem;
   right: -2.1rem;
@@ -65,7 +65,7 @@
 }
 
 .panel-sidebar__menu-notif:is(.active) .panel-sidebar__menu-notif-count {
-  background-color: var(--bs-primary);
+  background-color: var(--white-color);
 }
 
 .panel-sidebar__menu-icon {
@@ -154,16 +154,6 @@
   position: relative;
 }
 
-:has(.panel-sidebar__link-active).panel-sidebar__list::after {
-  content: "";
-  width: 100%;
-  height: 0.1rem;
-  background-color: var(--primary-color);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
 .panel-sidebar__link {
   display: flex;
   align-items: center;
@@ -222,7 +212,7 @@ nav {
   height: 0.5rem;
   margin-bottom: 5px;
   position: relative;
-  background: var(--bs-primary);
+  background: var(--white-color);
   border-radius: 3px;
   z-index: 1;
   transform-origin: 5px 0px;
