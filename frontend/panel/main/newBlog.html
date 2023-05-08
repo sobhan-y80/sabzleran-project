@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>پنل ادمین | سبزلرن</title>
+    <title>مقاله جدید | سبزلرن</title>
 
     <!-- Start Src Css -->
     <link
@@ -28,8 +28,8 @@
     <link rel="stylesheet" href="../../css/loader/loader.css" />
     <link rel="stylesheet" href="../../css/defualt.css" />
     <link rel="stylesheet" href="./css/panel.css" />
-    <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/defualt.css" />
+    <link rel="stylesheet" href="../../css/login.css" />
 
     <!-- Finish Src Css -->
   </head>
@@ -99,10 +99,7 @@
             <div class="panel-sidebar__menu-wrapper">
               <ul class="panel-sidebar__menu">
                 <li class="panel-sidebar__list">
-                  <a
-                    href="#"
-                    class="panel-sidebar__link panel-sidebar__link-active"
-                  >
+                  <a href="#" class="panel-sidebar__link">
                     <img
                       src="svg/home.svg"
                       alt="icon"
@@ -112,7 +109,10 @@
                   </a>
                 </li>
                 <li class="panel-sidebar__list">
-                  <a href="#" class="panel-sidebar__link">
+                  <a
+                    href="#"
+                    class="panel-sidebar__link panel-sidebar__link-active"
+                  >
                     <img
                       src="svg/course.svg"
                       alt="icon"
@@ -372,191 +372,70 @@
         </div>
         <div class="col-12 col-lg-10 my-2 my-0-lg panel__home">
           <div class="panel-home__wrapper">
-            <div class="panel-home__header">
-              <h2 class="panel-home__header-title">بررسی اجمالی</h2>
-              <h3 class="panel-home__header-time-update info-timezone">
-                این ماه
-              </h3>
-            </div>
-            <div class="panel-home__info-box-wrapper">
+            <h2 class="panel-home__title">افزودن محصول جدید</h2>
+            <div class="login-form__box-inputs my-5">
               <div class="row">
-                <div class="col-12 col-md-4 my-3 my-md-0">
-                  <div class="panel-home__info-box">
-                    <div class="info-box__right">
-                      <div class="info-box__title">درآمد</div>
-                      <div class="info-box__desc">
-                        <div class="info-box__income-content">
-                          <span class="info-box__income-symbol info-box__symbol"
-                            >$</span
-                          >
-                          <span class="info-box__income-number info-box__number"
-                            >2,420</span
-                          >
-                        </div>
-                        <div class="info-box__profit-content">
-                          <span class="info-box__profit-symbol info-box__symbol"
-                            >%</span
-                          >
-                          <span class="info-box__profit-numebr info-box__number"
-                            >5.2</span
-                          >
-                        </div>
-                      </div>
-                      <div class="info-box__time-update-content info-timezone">
-                        <span class="info-box___title-name">درآمد</span>
-                        <span class="info-box__time-update-name">این ماه</span>
-                      </div>
-                    </div>
-                    <div class="info-box__left">
-                      <div class="info-box__icon-wrapper">
-                        <img
-                          class="info-box__icon"
-                          src="svg/main-page/dollar.svg"
-                          alt=""
-                        />
-                      </div>
-                    </div>
+                <div class="col-12 col-lg-6 my-5 my-lg-0">
+                  <div class="login-form__input-box">
+                    <input
+                      id="login-form__title-input"
+                      type="text"
+                      class="input-box__input"
+                      autocomplete="off"
+                    />
+                    <span class="input-box__placeholder">عنوان</span>
+                    <i class="input-box__shape"></i>
                   </div>
                 </div>
-                <div class="col-12 col-md-4 my-3 my-md-0">
-                  <div class="panel-home__info-box">
-                    <div class="info-box__right">
-                      <div class="info-box__title">فروش</div>
-                      <div class="info-box__desc">
-                        <div class="info-box__income-content">
-                          <span class="info-box__income-symbol info-box__symbol"
-                            >$</span
-                          >
-                          <span class="info-box__income-number info-box__number"
-                            >2,420</span
-                          >
-                        </div>
-                        <div class="info-box__profit-content">
-                          <span class="info-box__profit-symbol info-box__symbol"
-                            >%</span
-                          >
-                          <span class="info-box__profit-numebr info-box__number"
-                            >5.2</span
-                          >
-                        </div>
-                      </div>
-                      <div class="info-box__time-update-content info-timezone">
-                        <span class="info-box___title-name">فروش</span>
-                        <span class="info-box__time-update-name">این ماه</span>
-                      </div>
-                    </div>
-                    <div class="info-box__left">
-                      <div class="info-box__icon-wrapper">
-                        <img
-                          class="info-box__icon"
-                          src="svg/main-page/cashier.svg"
-                          alt=""
-                        />
-                      </div>
-                    </div>
+                <div class="col-12 col-lg-6 my-5 my-lg-0">
+                  <div class="login-form__input-box">
+                    <input
+                      id="login-form__link-input"
+                      type="text"
+                      class="input-box__input"
+                      autocomplete="off"
+                    />
+                    <span class="input-box__placeholder">لینک</span>
+                    <i class="input-box__shape"></i>
                   </div>
                 </div>
-                <div class="col-12 col-md-4 my-3 my-md-0">
-                  <div class="panel-home__info-box">
-                    <div class="info-box__right">
-                      <div class="info-box__title">هزینه</div>
-                      <div class="info-box__desc">
-                        <div class="info-box__income-content">
-                          <span class="info-box__income-symbol info-box__symbol"
-                            >$</span
-                          >
-                          <span class="info-box__income-number info-box__number"
-                            >2,420</span
-                          >
-                        </div>
-                        <div class="info-box__profit-content">
-                          <span class="info-box__profit-symbol info-box__symbol"
-                            >%</span
-                          >
-                          <span class="info-box__profit-numebr info-box__number"
-                            >5.2</span
-                          >
-                        </div>
-                      </div>
-                      <div class="info-box__time-update-content info-timezone">
-                        <span class="info-box___title-name">هزینه</span>
-                        <span class="info-box__time-update-name">این ماه</span>
-                      </div>
-                    </div>
-                    <div class="info-box__left">
-                      <div class="info-box__icon-wrapper">
-                        <img
-                          class="info-box__icon"
-                          src="svg/main-page/invoice-dollar.svg"
-                          alt=""
-                        />
-                      </div>
-                    </div>
+                <div class="col-12 my-5">
+                  <div class="login-form__input-box login-form__textarea-box">
+                    <textarea
+                      id="login-form__textarea-input"
+                      class="input-box__input login-form__textarea"
+                    ></textarea>
+                    <span class="input-box__placeholder">مقاله</span>
+                    <i class="input-box__shape"></i>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="panel-home__chart hpc__part-section">
-              <div class="panel-home-content-chart">
-                <div class="swiper mySwiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div id="sale-chart"></div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div id="revanue-chart"></div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div id="cost-chart"></div>
-                    </div>
+                <div class="col-12 my-5">
+                  <div class="login-form__input-box">
+                    <label
+                      for="login-form__file-input"
+                      class="login-form__drop-wrapper"
+                    >
+                      <span class="drop-title">فایل رو دراپ کن</span>
+                      یا
+                      <input
+                        title="فایل خود را انتخاب کنید"
+                        type="file"
+                        class="input-box__input login-form__file-input"
+                        id="login-form__file-input"
+                        accept="image/*"
+                        required
+                      />
+                    </label>
                   </div>
-                  <div class="swiper-pagination"></div>
                 </div>
-              </div>
-            </div>
-            <div
-              class="panel-home__last-users hpc__custom-scroll hpc__part-section"
-            >
-              <div class="panel-home__last-users__title">
-                <span
-                  >افراد اخیرا <span class="hpc__title">ثبت نام </span>شده</span
-                >
-              </div>
-              <div class="panel-home__users-table table-responsive">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th>#</th>
-                      <th>شناسه</th>
-                      <th>نام کاربری</th>
-                      <th>شماره</th>
-                      <th>ایمیل</th>
-                      <th>رمز عبور</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>6440fb868a30abe3a2972543</td>
-                      <td>haghobatel</td>
-                      <td>09396007232</td>
-                      <td>sobhan@gmail.com</td>
-                      <td>
-                        $2b$12$D15N28ga2IcNN1FI/x5PWOLnSxkuAYvK1tYTMEmcLov3.S7W/Cs76
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>6440fb868a30abe3a2972543</td>
-                      <td>haghobatel</td>
-                      <td>09396007232</td>
-                      <td>sobhan@gmail.com</td>
-                      <td>
-                        $2b$12$D15N28ga2IcNN1FI/x5PWOLnSxkuAYvK1tYTMEmcLov3.S7W/Cs76
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="col-12 hpc__center">
+                  <button
+                    id="submit-new-blog-btn"
+                    class="login-form__submit w-100 w-lg-50"
+                  >
+                    اضافه شو
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -573,23 +452,14 @@
       defer
       src="../../vendor/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
     ></script>
-    <script
-      defer
-      src="../../vendor/node_modules/chart.js/dist/chart.js"
-      type="/module"
-    ></script>
-    <script
-      defer
-      src="../../vendor/node_modules/apexcharts/dist/apexcharts.js"
-    ></script>
+    <script src="../../vendor/node_modules/sweetalert/dist/sweetalert.min.js"></script>
     <script
       defer
       src="../../vendor/node_modules/swiper/swiper-bundle.min.js"
     ></script>
 
     <script defer src="../../js/loader.js"></script>
-    <script defer src="./js/chart.js" type="module"></script>
     <script defer src="./js/funcs/shared.js"></script>
-    <script defer src="./js/main.js" type="module"></script>
+    <script defer src="./js/newBlog.js" type="module"></script>
   </body>
 </html>

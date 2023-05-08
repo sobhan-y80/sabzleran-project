@@ -1,26 +1,3 @@
-.login-form__textarea {
-  width: 100%;
-  transition: height 1000ms !important;
-  border: none;
-  resize: none;
-}
-
-:has(.input-box__input.login-form__textarea.active) .login-form__textarea {
-  height: 8rem;
-  padding: 1rem;
-  transform: translateY(1.2rem);
-  transition: height 600ms;
-}
-
-.login-form__textarea-box .input-box__placeholder {
-  transform: translateY(50%);
-}
-
-:has(.input-box__input.login-form__textarea.active).login-form__textarea-box
-  .input-box__shape {
-  height: 8rem;
-}
-
 .main__contact-us .container {
   height: 100%;
   display: flex;

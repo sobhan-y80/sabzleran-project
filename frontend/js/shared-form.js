@@ -42,6 +42,7 @@ const chekcInputValue = (inputs, callback) => {
 
     if (inputValueFlag) {
       callback();
+      clearValueInput();
     } else {
       showSwal(
         "ععع یه قسمت رو جا برای کامل کردن جا گذاشتی :/",

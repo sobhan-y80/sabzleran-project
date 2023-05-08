@@ -24,3 +24,9 @@
 .hpc__custom-scroll ::-webkit-scrollbar-thumb {
   background-color: var(--primary-color);
 }
+
+.panel-home__title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}

@@ -58,6 +58,7 @@ var options = {
   },
 };
 var saleChart = new ApexCharts(document.querySelector("#sale-chart"), options);
+
 saleChart.render();
 // ? sale Chart
 
