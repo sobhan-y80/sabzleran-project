@@ -374,42 +374,48 @@
           <div class="panel-home__wrapper">
             <h2 class="panel-home__title">افزودن محصول جدید</h2>
             <div class="login-form__box-inputs my-5">
-              <div class="row">
-                <div class="col-12 col-lg-6 my-5 my-lg-0">
-                  <div class="login-form__input-box">
-                    <input
-                      id="login-form__title-input"
-                      type="text"
-                      class="input-box__input"
-                      autocomplete="off"
-                    />
-                    <span class="input-box__placeholder">عنوان</span>
-                    <i class="input-box__shape"></i>
+              <div class="row hpc__center">
+                <div class="row">
+                  <div class="col-12 col-lg-6 my-5">
+                    <div class="login-form__input-box">
+                      <input
+                        id="login-form__name-input"
+                        type="text"
+                        class="input-box__input"
+                        autocomplete="off"
+                      />
+                      <span class="input-box__placeholder">نام محصول</span>
+                      <i class="input-box__shape"></i>
+                    </div>
                   </div>
-                </div>
-                <div class="col-12 col-lg-6 my-5 my-lg-0">
-                  <div class="login-form__input-box">
-                    <input
-                      id="login-form__link-input"
-                      type="text"
-                      class="input-box__input"
-                      autocomplete="off"
-                    />
-                    <span class="input-box__placeholder">لینک</span>
-                    <i class="input-box__shape"></i>
+                  <div class="col-12 col-lg-6 my-5">
+                    <div class="login-form__input-box">
+                      <input
+                        id="login-form__price-input"
+                        type="text"
+                        class="input-box__input"
+                        autocomplete="off"
+                      />
+                      <span class="input-box__placeholder">قیمت محصول</span>
+                      <i class="input-box__shape"></i>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 my-5">
+                    <div class="login-form__input-box">
+                      <input
+                        id="login-form__count-product-input"
+                        type="text"
+                        class="input-box__input"
+                        autocomplete="off"
+                      />
+                      <span class="input-box__placeholder">تعداد محصول</span>
+                      <i class="input-box__shape"></i>
+                    </div>
                   </div>
                 </div>
                 <div class="col-12 my-5">
-                  <div class="login-form__input-box login-form__textarea-box">
-                    <textarea
-                      id="login-form__textarea-input"
-                      class="input-box__input login-form__textarea"
-                    ></textarea>
-                    <span class="input-box__placeholder">مقاله</span>
-                    <i class="input-box__shape"></i>
-                  </div>
-                </div>
-                <div class="col-12 my-5">
+                  <h3 class="login-form__input-title hpc__title">عکس محصول</h3>
+
                   <div class="login-form__input-box">
                     <label
                       for="login-form__file-input"
@@ -428,9 +434,71 @@
                     </label>
                   </div>
                 </div>
-                <div class="col-12 hpc__center">
+                <div dir="ltr" class="row gap-3 flex-nowrap-lg">
+                  <div
+                    class="col-12 col-lg-6 hpc__part-section d-flex align-items-center justify-content-between"
+                  >
+                    <div
+                      class="btn-group btn-group-lg"
+                      role="group"
+                      aria-label="Basic radio toggle button First group"
+                    >
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="btnradio"
+                        id="unavailable-product"
+                        autocomplete="off"
+                      />
+                      <label class="btn" for="unavailable-product"
+                        >ناموجود</label
+                      >
+
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="btnradio"
+                        id="available-product"
+                        autocomplete="off"
+                        checked
+                      />
+                      <label class="btn" for="available-product">موجود</label>
+                    </div>
+                    <h2 class="panel-home__title">موجودی</h2>
+                  </div>
+                  <div
+                    class="col-12 col-lg-6 hpc__part-section d-flex align-items-center justify-content-between"
+                  >
+                    <div
+                      class="btn-group btn-group-lg"
+                      role="group"
+                      aria-label="Basic radio toggle button Second group"
+                    >
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="presellBtnRadio"
+                        id="presell"
+                        autocomplete="off"
+                        checked
+                      />
+                      <label class="btn" for="presell">پیش فروش</label>
+
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="presellBtnRadio"
+                        id="inprogress"
+                        autocomplete="off"
+                      />
+                      <label class="btn" for="inprogress">در حال برگذاری</label>
+                    </div>
+                    <h2 class="panel-home__title">وضعیت دوره</h2>
+                  </div>
+                </div>
+                <div class="col-12 my-5 hpc__center">
                   <button
-                    id="submit-new-blog-btn"
+                    id="submit-new-course-btn"
                     class="login-form__submit w-100 w-lg-50"
                   >
                     اضافه شو
@@ -460,6 +528,6 @@
 
     <script defer src="../../js/loader.js"></script>
     <script defer src="./js/funcs/shared.js"></script>
-    <script defer src="./js/newBlog.js" type="module"></script>
+    <script defer src="./js/new-product.js" type="module"></script>
   </body>
 </html>
