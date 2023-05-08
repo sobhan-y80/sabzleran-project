@@ -44,7 +44,7 @@
 .panel-sidebar__menu-notif {
   cursor: pointer;
   width: 25%;
-  padding: 1rem 1.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 1rem;
   background-color: var(--box-color);
   position: relative;
@@ -240,7 +240,7 @@ nav {
 
 :has(#toggleMenuInput:checked) .mobile-menu-line {
   opacity: 1;
-  transform: rotate(47deg) translate(-2rem, -1.75rem);
+  transform: rotate(45deg) translate(-1rem, -1.75rem);
   background: #36383f;
 }
 
@@ -250,7 +250,7 @@ nav {
 }
 
 :has(#toggleMenuInput:checked) .mobile-menu-line:nth-last-child(2) {
-  transform: rotate(-45deg) translate(0, -1px);
+  transform: rotate(-43deg) translate(0, 0.85rem);
 }
 
 #menu-wrapper {
@@ -394,10 +394,49 @@ nav {
   font-size: 2rem;
 }
 
+.panel-home__last-users .table {
+  border-radius: 1rem;
+  background-color: var(--dark-color);
+}
+
 .panel-home__last-users tr {
   font-weight: bold;
   color: var(--primary-color);
   border-bottom: 0.1rem solid var(--bs-primary);
+}
+
+.table > :not(caption) > * > * {
+  padding: 1rem 1.5rem;
+}
+
+.panel-home__last-users td {
+  cursor: pointer;
+  font-family: var(--seccend-font);
+  color: var(--white-color);
+  position: relative;
+}
+
+.panel-home__last-users td::after {
+  content: "کپی کنید";
+  visibility: hidden;
+  width: 10rem;
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+  text-align: center;
+  border-radius: 1rem;
+  padding: 1rem 0.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -125%);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.panel-home__last-users td:hover::after {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* = Finish Header Last Users Styles = */
@@ -406,7 +445,8 @@ nav {
 
 /* Finish Style Panel */
 
-/* Start Style Panel */
+/* Start Style Panel Responsive */
+
 @media only screen and (max-width: 992px) {
   .panel-wrapper {
     flex-flow: column nowrap;
@@ -435,20 +475,10 @@ nav {
   .header-main__logo-text {
     font-size: 3rem;
   }
+
+  .panel-sidebar__menu-notif {
+    padding: 1.5rem;
+  }
 }
 
-/* Finish Panel Sidebar Style */
-
-/* Start Home Panel Style  */
-/* = Start Header Styles = */
-/* = Finihs Header Styles = */
-
-/* = Start Header Box Styles = */
-/* = Finish Header Box Styles = */
-
-/* = Start Header Last Users Styles = */
-/* = Finish Header Last Users Styles = */
-
-/* Finish Home Panel Style  */
-
-/* Finish Style Panel */
+/* Finish Style Panel Responsive */

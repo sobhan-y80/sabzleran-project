@@ -64,7 +64,7 @@
                 </div>
               </div>
               <div class="panel-sidebar__menu-notif active" title="اعلانات">
-                <div class="panel-sidebar__menu-notif-img-wrapper">
+                <div class="panel-sidebar__menu-notif-img-wrapper hpc__center">
                   <img
                     width="100%"
                     src="./svg/main-page/outline-notification.svg"
@@ -513,25 +513,48 @@
                 </div>
               </div>
             </div>
-            <div class="panel-home__last-users hpc__part-section">
+            <div
+              class="panel-home__last-users hpc__custom-scroll hpc__part-section"
+            >
               <div class="panel-home__last-users__title">
                 <span
                   >افراد اخیرا <span class="hpc__title">ثبت نام </span>شده</span
                 >
               </div>
-              <div class="panel-home__users-table">
-                <table class="panel-home__table table">
+              <div class="panel-home__users-table table-responsive">
+                <table class="table">
                   <thead>
                     <tr>
+                      <th>#</th>
                       <th>شناسه</th>
-                      <th>نام</th>
-                      <th>نام خانوادگی</th>
+                      <th>نام کاربری</th>
                       <th>شماره</th>
                       <th>ایمیل</th>
                       <th>رمز عبور</th>
                     </tr>
                   </thead>
-                  <tbody></tbody>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>6440fb868a30abe3a2972543</td>
+                      <td>haghobatel</td>
+                      <td>09396007232</td>
+                      <td>sobhan@gmail.com</td>
+                      <td>
+                        $2b$12$D15N28ga2IcNN1FI/x5PWOLnSxkuAYvK1tYTMEmcLov3.S7W/Cs76
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>6440fb868a30abe3a2972543</td>
+                      <td>haghobatel</td>
+                      <td>09396007232</td>
+                      <td>sobhan@gmail.com</td>
+                      <td>
+                        $2b$12$D15N28ga2IcNN1FI/x5PWOLnSxkuAYvK1tYTMEmcLov3.S7W/Cs76
+                      </td>
+                    </tr>
+                  </tbody>
                 </table>
               </div>
             </div>
@@ -566,6 +589,6 @@
     <script defer src="../../js/loader.js"></script>
     <script defer src="./js/chart.js" type="module"></script>
     <script defer src="./js/funcs/shared.js"></script>
-    <script defer src="./js/main.js"></script>
+    <script defer src="./js/main.js" type="module"></script>
   </body>
 </html>

@@ -181,9 +181,12 @@ costChart.render();
 // ! apexChart.js ! //
 
 var swiper = new Swiper(".mySwiper", {
+  autoplay: {
+    pauseOnMouseEnter: true,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-    // dynamicBullets: true,
+    dynamicBullets: true,
   },
 });
