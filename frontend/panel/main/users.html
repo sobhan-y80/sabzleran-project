@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مقاله جدید | سبزلرن</title>
+
+    <!-- Start Src Css -->
+    <link
+      rel="stylesheet"
+      href="../../vendor/node_modules/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../vendor/node_modules/@fortawesome/fontawesome-free/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../vendor/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../vendor/node_modules/animate.css/animate.min.css"
+    />
+    <!-- <link rel="stylesheet" href="../../css/reset.css" /> -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/loader/loader.css" />
+    <link rel="stylesheet" href="../../css/defualt.css" />
+    <link rel="stylesheet" href="./css/panel.css" />
+    <link rel="stylesheet" href="./css/defualt.css" />
+    <link rel="stylesheet" href="../../css/login.css" />
+
+    <!-- Finish Src Css -->
+  </head>
+  <body>
+    <!-- Start LOADER -->
+    <div class="loader-wrapper">
+      <div class="loader__banter">
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+        <div class="loader__banter-box"></div>
+      </div>
+    </div>
+    <!-- Finish Loader -->
+
+    <!-- Start Panel -->
+    <div class="panel">
+      <div class="panel-wrapper row">
+        <div class="col-12 col-lg-2 my-2 my-0-lg panel__sidebar">
+          <div class="panel-sidebar__wrapper">
+            <div class="panel-sidebar__title-wrapper">
+              <div class="panel-sidebar__logo hpc__noselect">
+                <div class="header-main__logo-text-wrapper">
+                  <span class="header-main__logo-text">L</span
+                  ><span class="header-main__logo-text">E</span
+                  ><span class="header-main__logo-text">G</span
+                  ><span class="header-main__logo-text">O</span>
+                </div>
+              </div>
+              <div class="panel-sidebar__menu-notif active" title="اعلانات">
+                <div class="panel-sidebar__menu-notif-img-wrapper hpc__center">
+                  <img
+                    width="100%"
+                    src="./svg/main-page/notification-bing-fill.svg"
+                    alt=""
+                  />
+                  <div
+                    class="panel-sidebar__menu-notif-count hpc__center hpc__noselect"
+                  >
+                    99+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel-sidebar__profile-wrapper">
+              <a href="" class="panel-sidebar__profile hpc__center">
+                <img
+                  class="panel-sidebar__profile-img"
+                  src="../../images/product-svg/user-comment.svg"
+                  alt=""
+                />
+                <div class="panel-sidebar__profile-name-wrapper hpc__center">
+                  <p
+                    id="profile-name"
+                    class="panel-sidebar__profile-name hpc__short-text"
+                  >
+                    Sobhan Yaghobi
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="panel-sidebar__menu-wrapper">
+              <ul class="panel-sidebar__menu">
+                <li class="panel-sidebar__list">
+                  <a href="#" class="panel-sidebar__link">
+                    <img
+                      src="svg/home.svg"
+                      alt="icon"
+                      class="panel-sidebar__link-icon"
+                    />
+                    <span class="panel-sidebar__link-text">خانه</span>
+                  </a>
+                </li>
+                <li class="panel-sidebar__list">
+                  <a
+                    href="#"
+                    class="panel-sidebar__link panel-sidebar__link-active"
+                  >
+                    <img
+                      src="svg/course.svg"
+                      alt="icon"
+                      class="panel-sidebar__link-icon"
+                    />
+                    <span class="panel-sidebar__link-text">دوره ها</span>
+                  </a>
+                </li>
+                <li class="panel-sidebar__list">
+                  <a href="#" class="panel-sidebar__link">
+                    <img
+                      src="svg/menu-board.svg"
+                      alt="icon"
+                      class="panel-sidebar__link-icon"
+                    />
+                    <span class="panel-sidebar__link-text">منو ها</span>
+                  </a>
+                </li>
+                <li class="panel-sidebar__list">
+                  <a href="#" class="panel-sidebar__link">
+                    <img
+                      src="svg/article.svg"
+                      alt="icon"
+                      class="panel-sidebar__link-icon"
+                    />
+                    <span class="panel-sidebar__link-text">مقالات</span>
+                  </a>
+                </li>
+                <li class="panel-sidebar__list">
+                  <a href="#" class="panel-sidebar__link">
+                    <img
+                      src="svg/draft.svg"
+                      alt="icon"
+                      class="panel-sidebar__link-icon"
+                    />
+                    <span class="panel-sidebar__link-text">پیش نویس ها</span>
+                  </a>
+                </li>
+                <li class="panel-sidebar__list">
+                  <a href="#" class="panel-sidebar__link">
+                    <img
+                      src="svg/users.svg"
+                      alt="icon"
+                      class="panel-sidebar__link-icon"
+                    />
+                    <span class="panel-sidebar__link-text">کاربران</span>
+                  </a>
+                </li>
+                <li class="panel-sidebar__list">
+                  <a href="#" class="panel-sidebar__link">
+                    <img
+                      src="svg/category.svg"
+                      alt="icon"
+                      class="panel-sidebar__link-icon"
+                    />
+                    <span class="panel-sidebar__link-text">دسته بندی ها</span>
+                  </a>
+                </li>
+                <li class="panel-sidebar__list">
+                  <a href="#" class="panel-sidebar__link">
+                    <img
+                      src="svg/message-text.svg"
+                      alt="icon"
+                      class="panel-sidebar__link-icon"
+                    />
+                    <span class="panel-sidebar__link-text"> پیغام ها</span>
+                  </a>
+                </li>
+                <li class="panel-sidebar__list">
+                  <a href="#" class="panel-sidebar__link">
+                    <img
+                      src="svg/receipt-discount.svg"
+                      alt="icon"
+                      class="panel-sidebar__link-icon"
+                    />
+                    <span class="panel-sidebar__link-text">کد های تخفیف</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="panel-slidebar__mobile-wrapper">
+            <div class="content">
+              <nav role="navigation">
+                <div id="menuToggle" class="hpc__center hpc__noselect">
+                  <input id="toggleMenuInput" type="checkbox" />
+                  <span class="mobile-menu-line"></span>
+                  <span class="mobile-menu-line"></span>
+                  <span class="mobile-menu-line"></span>
+                </div>
+                <div id="menu-wrapper">
+                  <ul class="menu">
+                    <div class="panel-sidebar__profile-wrapper">
+                      <a href="" class="panel-sidebar__profile hpc__center">
+                        <img
+                          class="panel-sidebar__profile-img"
+                          src="../../images/product-svg/user-comment.svg"
+                          alt=""
+                        />
+                        <div
+                          class="panel-sidebar__profile-name-wrapper hpc__center"
+                        >
+                          <p
+                            id="profile-name"
+                            class="panel-sidebar__profile-name hpc__short-text"
+                          >
+                            Sobhan Yaghobi
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="panel-sidebar__menu-wrapper">
+                      <ul class="panel-sidebar__menu">
+                        <li class="panel-sidebar__list">
+                          <a href="#" class="panel-sidebar__link">
+                            <img
+                              src="svg/home.svg"
+                              alt="icon"
+                              class="panel-sidebar__link-icon"
+                            />
+                            <span class="panel-sidebar__link-text">خانه</span>
+                          </a>
+                        </li>
+                        <li class="panel-sidebar__list">
+                          <a
+                            href="#"
+                            class="panel-sidebar__link panel-sidebar__link-active"
+                          >
+                            <img
+                              src="svg/course.svg"
+                              alt="icon"
+                              class="panel-sidebar__link-icon"
+                            />
+                            <span class="panel-sidebar__link-text"
+                              >دوره ها</span
+                            >
+                          </a>
+                        </li>
+                        <li class="panel-sidebar__list">
+                          <a href="#" class="panel-sidebar__link">
+                            <img
+                              src="svg/menu-board.svg"
+                              alt="icon"
+                              class="panel-sidebar__link-icon"
+                            />
+                            <span class="panel-sidebar__link-text">منو ها</span>
+                          </a>
+                        </li>
+                        <li class="panel-sidebar__list">
+                          <a href="#" class="panel-sidebar__link">
+                            <img
+                              src="svg/article.svg"
+                              alt="icon"
+                              class="panel-sidebar__link-icon"
+                            />
+                            <span class="panel-sidebar__link-text">مقالات</span>
+                          </a>
+                        </li>
+                        <li class="panel-sidebar__list">
+                          <a href="#" class="panel-sidebar__link">
+                            <img
+                              src="svg/draft.svg"
+                              alt="icon"
+                              class="panel-sidebar__link-icon"
+                            />
+                            <span class="panel-sidebar__link-text"
+                              >پیش نویس ها</span
+                            >
+                          </a>
+                        </li>
+                        <li class="panel-sidebar__list">
+                          <a href="#" class="panel-sidebar__link">
+                            <img
+                              src="svg/users.svg"
+                              alt="icon"
+                              class="panel-sidebar__link-icon"
+                            />
+                            <span class="panel-sidebar__link-text"
+                              >کاربران</span
+                            >
+                          </a>
+                        </li>
+                        <li class="panel-sidebar__list">
+                          <a href="#" class="panel-sidebar__link">
+                            <img
+                              src="svg/category.svg"
+                              alt="icon"
+                              class="panel-sidebar__link-icon"
+                            />
+                            <span class="panel-sidebar__link-text"
+                              >دسته بندی ها</span
+                            >
+                          </a>
+                        </li>
+                        <li class="panel-sidebar__list">
+                          <a href="#" class="panel-sidebar__link">
+                            <img
+                              src="svg/message-text.svg"
+                              alt="icon"
+                              class="panel-sidebar__link-icon"
+                            />
+                            <span class="panel-sidebar__link-text">
+                              پیغام ها</span
+                            >
+                          </a>
+                        </li>
+                        <li class="panel-sidebar__list">
+                          <a href="#" class="panel-sidebar__link">
+                            <img
+                              src="svg/receipt-discount.svg"
+                              alt="icon"
+                              class="panel-sidebar__link-icon"
+                            />
+                            <span class="panel-sidebar__link-text"
+                              >کد های تخفیف</span
+                            >
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </ul>
+                </div>
+                <div
+                  class="panel-sidebar__title-wrapper panel-sidebar__mobile-title-wrapper"
+                >
+                  <div class="panel-sidebar__logo hpc__noselect">
+                    <div class="header-main__logo-text-wrapper">
+                      <span class="header-main__logo-text">L</span
+                      ><span class="header-main__logo-text">E</span
+                      ><span class="header-main__logo-text">G</span
+                      ><span class="header-main__logo-text">O</span>
+                    </div>
+                  </div>
+                  <div
+                    class="panel-sidebar__menu-notif panel-sidebar__mobile-menu-notif active"
+                    title="اعلانات"
+                  >
+                    <div
+                      class="panel-sidebar__menu-notif-img-wrapper panel-sidebar__mobile-menu-notif-img-wrapper hpc__center"
+                    >
+                      <img
+                        height="100%"
+                        src="./svg/main-page/notification-bing-fill.svg"
+                        alt=""
+                      />
+                      <div
+                        class="panel-sidebar__menu-notif-count hpc__center hpc__noselect"
+                      >
+                        99+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-10 my-2 my-0-lg panel__home">
+          <div class="panel-home__wrapper">
+            <h2 class="panel-home__title">افزودن محصول جدید</h2>
+            <div class="login-form__box-inputs my-5">
+              <div class="row hpc__center">
+                <div class="row">
+                  <div class="col-12 col-lg-6 my-5">
+                    <div class="login-form__input-box">
+                      <input
+                        id="login-form__name-input"
+                        type="text"
+                        class="input-box__input"
+                        value=""
+                        autocomplete="off"
+                      />
+                      <span class="input-box__placeholder"
+                        >نام
+                        <span style="color: #ffffff99; padding-inline: 0.5rem"
+                          >و</span
+                        >
+                        نام خانوادگی
+                      </span>
+                      <i class="input-box__shape"></i>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 my-5">
+                    <div class="login-form__input-box">
+                      <input
+                        id="login-form__username-input"
+                        type="text"
+                        class="input-box__input"
+                        autocomplete="off"
+                      />
+                      <span class="input-box__placeholder">نام کاربری</span>
+                      <i class="input-box__shape"></i>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 my-5">
+                    <div class="login-form__input-box">
+                      <input
+                        id="login-form__email-input"
+                        type="email"
+                        class="input-box__input"
+                        autocomplete="off"
+                      />
+                      <span class="input-box__placeholder">ایمیل</span>
+                      <i class="input-box__shape"></i>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 my-5">
+                    <div class="login-form__input-box">
+                      <input
+                        id="login-form__phone-number-input"
+                        type="text"
+                        class="input-box__input"
+                        autocomplete="off"
+                      />
+                      <span class="input-box__placeholder">شماره تلفن</span>
+                      <i class="input-box__shape"></i>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 my-5">
+                    <div
+                      class="login-form__input-box login-form__input-box__password"
+                    >
+                      <div class="login-form__password-progress"></div>
+                      <input
+                        id="login-form__password-input"
+                        type="password"
+                        class="input-box__input"
+                        value=""
+                        autocomplete="off"
+                      />
+                      <button class="password-box__btn">
+                        <img
+                          id="password-login__icon"
+                          src="../../images/login/eye-close.svg"
+                          class="password-box__svg"
+                          alt=""
+                        />
+                      </button>
+                      <span class="input-box__placeholder">رمز عبور</span>
+                      <i class="input-box__shape"></i>
+                    </div>
+                  </div>
+                </div>
+                <div dir="ltr" class="row flex-row-reverse">
+                  <div
+                    class="col-12 hpc__part-section d-flex align-items-center justify-content-between"
+                  >
+                    <div
+                      class="btn-group btn-group-lg"
+                      role="group"
+                      aria-label="Basic radio toggle button First group"
+                    >
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="btnradio"
+                        id="male-gender"
+                        autocomplete="off"
+                      />
+                      <label class="btn" for="male-gender">مرد</label>
+
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="btnradio"
+                        id="female-gender"
+                        autocomplete="off"
+                        checked
+                      />
+                      <label class="btn" for="female-gender">زن</label>
+
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="btnradio"
+                        id="not-set-gender"
+                        autocomplete="off"
+                        checked
+                      />
+                      <label class="btn" for="not-set-gender"
+                        >اعلام نمیکنم</label
+                      >
+                    </div>
+                    <h2 class="panel-home__title">جنسیت</h2>
+                  </div>
+                </div>
+                <div class="col-12 my-5 hpc__center">
+                  <button
+                    id="submit-new-course-btn"
+                    class="login-form__submit w-100 w-lg-50"
+                  >
+                    اضافه شو
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- <h2 class="panel-home__title">افزودن محصول جدید</h2> -->
+            <div
+              class="panel-home__last-users hpc__custom-scroll hpc__part-section"
+            >
+              <div
+                class="panel-home__last-users__header row flex-nowrap flex-column flex-md-row align-items-center justify-content-md-between justify-content-center"
+              >
+                <h2
+                  class="col-12 col-md-4 panel-home__last-users__title hpc__title d-flex justify-content-center justify-content-md-start"
+                >
+                  لیست کاربران
+                </h2>
+
+                <div
+                  class="col-8 col-md-3 col-lg-2 my-5 main-header__search-wrapper"
+                >
+                  <div
+                    id="main-header__searchbar"
+                    class="main-header__searchbar global__searchbar"
+                  >
+                    <input
+                      type="text"
+                      id="main-header__search-input"
+                      class="main-header___search-input global__search-input"
+                      placeholder="جستجو..."
+                    />
+                    <button class="main-header__search-btn global__search-btn">
+                      <i
+                        class="fa-solid fa-magnifying-glass main-header__serach-icon global__search-icon"
+                      ></i>
+                    </button>
+                  </div>
+                  <div
+                    id="auto-search-box"
+                    class="main-header___auto-search-box"
+                  >
+                    <li class="main-header__search-box-item">
+                      <a class="main-header__search-box-link" href="undefined">
+                        دوره NPM برای برنامه نویسان جاوا اسکریپت
+                      </a>
+                    </li>
+                    <li class="main-header__search-box-item">
+                      <a class="main-header__search-box-link" href="undefined">
+                        دوره جامع Nodejds برای‌بازار کار
+                      </a>
+                    </li>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-home__users-table table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>ویرایش</th>
+                      <th>حذف</th>
+                      <th>نام کاربری</th>
+                      <th>شناسه</th>
+                      <th>شماره</th>
+                      <th>ایمیل</th>
+                      <th>رمز عبور</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td class="no-copy">
+                        <button class="btn btn-primary">ویرایش</button>
+                      </td>
+                      <td class="no-copy">
+                        <button class="btn btn-danger">حذف</button>
+                      </td>
+                      <td>haghobatel</td>
+                      <td>6440fb868a30abe3a2972543</td>
+                      <td>09396007232</td>
+                      <td>sobhan@gmail.com</td>
+                      <td>
+                        $2b$12$D15N28ga2IcNN1FI/x5PWOLnSxkuAYvK1tYTMEmcLov3.S7W/Cs76
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td class="no-copy">
+                        <button class="btn btn-primary">ویرایش</button>
+                      </td>
+                      <td class="no-copy">
+                        <button class="btn btn-danger">حذف</button>
+                      </td>
+                      <td>haghobatel</td>
+                      <td>6440fb868a30abe3a2972543</td>
+                      <td>09396007232</td>
+                      <td>sobhan@gmail.com</td>
+                      <td>
+                        $2b$12$D15N28ga2IcNN1FI/x5PWOLnSxkuAYvK1tYTMEmcLov3.S7W/Cs76
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Finish Panel -->
+
+    <script
+      defer
+      src="../../vendor/node_modules/@fortawesome/fontawesome-free/js/all.min.js"
+    ></script>
+    <script
+      defer
+      src="../../vendor/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script src="../../vendor/node_modules/sweetalert/dist/sweetalert.min.js"></script>
+    <script
+      defer
+      src="../../vendor/node_modules/swiper/swiper-bundle.min.js"
+    ></script>
+
+    <script defer src="../../js/loader.js"></script>
+    <script defer src="./js/funcs/shared.js"></script>
+    <script defer src="./js/users.js" type="module"></script>
+  </body>
+</html>

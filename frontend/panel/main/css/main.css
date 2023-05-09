@@ -108,52 +108,6 @@
 .panel-home__last-users__title .hpc__title {
   font-size: 2rem;
 }
-
-.panel-home__last-users .table {
-  border-radius: 1rem;
-  background-color: var(--dark-color);
-}
-
-.panel-home__last-users tr {
-  font-weight: bold;
-  color: var(--primary-color);
-  border-bottom: 0.1rem solid var(--bs-primary);
-}
-
-.table > :not(caption) > * > * {
-  padding: 1rem 1.5rem;
-}
-
-.panel-home__last-users td {
-  cursor: pointer;
-  font-family: var(--seccend-font);
-  color: var(--white-color);
-  position: relative;
-}
-
-.panel-home__last-users td::after {
-  content: "کپی کنید";
-  visibility: hidden;
-  width: 10rem;
-  background-color: var(--primary-color);
-  color: var(--dark-color);
-  text-align: center;
-  border-radius: 1rem;
-  padding: 1rem 0.5rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -125%);
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.panel-home__last-users td:hover::after {
-  visibility: visible;
-  opacity: 1;
-}
-
 /* = Finish Header Last Users Styles = */
 
 /* Finish Home Panel Style  */

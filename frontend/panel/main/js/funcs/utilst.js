@@ -2,10 +2,10 @@
 
 const copyTableTextHandler = (tableElm) => {
   tableElm.addEventListener("click", (event) => {
-    let elmSelected = event.target.tagName;
-    let elmValue = event.target.innerHTML;
+    let elm = event.target;
+    let { tagName: elmTagName, innerHTML: elmValue } = event.target;
 
-    if (elmSelected === "TD") {
+    if (elmTagName === "TD" && !elm.classList.contains("no-copy")) {
       navigator.clipboard.writeText(elmValue);
     }
   });

@@ -37,13 +37,15 @@
   color: var(--primary-color);
 }
 
-.btn {
+.btn-group > .btn {
+  font-weight: bold;
+  font-size: 1.5rem;
   color: var(--text-main-header-color);
   border-color: var(--primary-color);
 }
 
-.btn:hover {
-  color: var(--white-color) !important;
+.btn-group > .btn:hover {
+  color: var(--text-main-header-color) !important;
   border-color: var(--primary-color) !important;
 }
 
@@ -51,4 +53,60 @@
   color: var(--dark-color);
   background-color: var(--primary-color);
   border-color: var(--primary-color);
+}
+
+.table {
+  border-radius: 1rem;
+  background-color: var(--dark-color);
+}
+
+.table tr {
+  font-weight: bold;
+  color: var(--primary-color);
+  border-bottom: 0.1rem solid var(--bs-primary);
+}
+
+.table > :not(caption) > * > * {
+  padding: 1rem 1.5rem;
+}
+
+.table td {
+  cursor: pointer;
+  font-family: var(--seccend-font);
+  color: var(--white-color);
+  position: relative;
+}
+
+.table td::after {
+  content: "کپی کنید";
+  visibility: hidden;
+  width: 10rem;
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+  text-align: center;
+  border-radius: 1rem;
+  padding: 1rem 0.5rem;
+  position: absolute;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -125%); */
+  top: 50%;
+  right: 50%;
+  transform: translate(150%, -50%);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.table td:not(td.no-copy):hover::after {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 975px) {
+  .main-header__course-menu,
+  .main-header__dropdown,
+  .main-header__search-wrapper {
+    display: unset !important;
+  }
 }

@@ -1,14 +1,14 @@
 import { showSwal } from "./funcs/utils.js";
 
-const ShowPassHandler = (passwordInput, passIcon) => {
+const ShowPassHandler = (passwordInput, passIcon, iconRoute = null) => {
   let iconCondition, passwordType;
   let conditionInputType = passwordInput.getAttribute("type");
 
   // Start If Icon Condition
   iconCondition =
     conditionInputType === "password"
-      ? "images/login/eye-open.svg"
-      : "images/login/eye-close.svg";
+      ? `${iconRoute ? iconRoute : ""}images/login/eye-open.svg`
+      : `${iconRoute ? iconRoute : ""}images/login/eye-close.svg`;
   passIcon.setAttribute("src", iconCondition);
   // Finish If Icon Condition
 
