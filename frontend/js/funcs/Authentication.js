@@ -32,7 +32,6 @@ const register = () => {
   })
     .then((res) => {
       if (res.status === 201) {
-        saveInfoLocalStorage("user", result.accessToken);
         showSwal(
           "ثبت نام با موفقیت انجام شود :))",
           "success",
@@ -40,7 +39,7 @@ const register = () => {
           1000,
           (res) => {
             setTimeout(() => {
-              // location.href = "index.html";
+              location.href = "index.html";
             }, 500);
           }
         );
@@ -57,6 +56,9 @@ const register = () => {
         emailInput.value = "";
       }
       return res.json();
+    })
+    .then((result) => {
+      saveInfoLocalStorage("user", result.accessToken);
     })
     .catch((err) => {
       console.log(err);
@@ -91,7 +93,6 @@ const login = () => {
   })
     .then((res) => {
       if (res.status === 200) {
-        saveInfoLocalStorage("user", result.accessToken);
         showSwal("با موفقیت وارد شدید", "success", false, 1000, (res) => {
           setTimeout(() => {
             location.href = "index.html";
@@ -108,6 +109,9 @@ const login = () => {
         identifierInput.value = "";
       }
       return res.json();
+    })
+    .then((result) => {
+      saveInfoLocalStorage("user", result.accessToken);
     })
     .finally((data) => {
       clearValueInput();

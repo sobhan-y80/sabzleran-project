@@ -65,6 +65,7 @@
   color: var(--white-color);
 }
 .course-box__content {
+  padding: 0 0 3rem 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -111,6 +112,10 @@
 @media only screen and (max-width: 576px) {
   .courses-header__left {
     display: none;
+  }
+
+  .course-box {
+    justify-content: unset !important;
   }
 }
 /* Finsish Course Section Responsive */

@@ -68,10 +68,6 @@
   flex-flow: row;
 }
 
-.about-us__box-left {
-  flex-flow: row-reverse;
-}
-
 .about-us__img-wrapper {
   display: flex;
   align-items: center;
