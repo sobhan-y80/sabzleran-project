@@ -2,10 +2,10 @@ import {
   setEventsForInput,
   checkInputActive,
   chekcInputValue,
-} from "../../../js/shared-form.js";
+} from "../shared-form.js";
 
 const loginInputs = document.querySelectorAll(".input-box__input");
-const submitNewBlogBtn = document.querySelector("#submit-new-blog-btn");
+const submitNewCourseBtn = document.querySelector("#submit-new-course-btn");
 
 window.addEventListener("keyup", (event) => {
   if (event.keyCode === 13) {
@@ -13,7 +13,7 @@ window.addEventListener("keyup", (event) => {
   }
 });
 
-submitNewBlogBtn.addEventListener("click", (event) => {
+submitNewCourseBtn.addEventListener("click", (event) => {
   chekcInputValue(loginInputs, doLog);
 });
 

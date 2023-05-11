@@ -4,10 +4,10 @@ import {
   checkInputActive,
   chekcInputValue,
   ShowPassHandler,
-} from "../../../js/shared-form.js";
+} from "../shared-form.js";
 
 const loginInputs = document.querySelectorAll(".input-box__input");
-const submitNewCourseBtn = document.querySelector("#submit-new-course-btn");
+const submitNewUserBtn = document.querySelector("#submit-new-user-btn");
 const passwordInput = document.querySelector("#login-form__password-input");
 const showPassBtn = document.querySelector(".password-box__btn");
 const passBtnIcon = document.querySelector("#password-login__icon");
@@ -20,7 +20,7 @@ window.addEventListener("keyup", (event) => {
   }
 });
 
-submitNewCourseBtn.addEventListener("click", (event) => {
+submitNewUserBtn.addEventListener("click", (event) => {
   chekcInputValue(loginInputs, doLog);
 });
 

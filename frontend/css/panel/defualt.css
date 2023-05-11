@@ -63,11 +63,12 @@
 .table tr {
   font-weight: bold;
   color: var(--primary-color);
-  border-bottom: 0.1rem solid var(--bs-primary);
+  border-bottom: 0.2rem solid var(--box-color);
 }
 
 .table > :not(caption) > * > * {
   padding: 1rem 1.5rem;
+  white-space: nowrap;
 }
 
 .table td {
@@ -77,7 +78,7 @@
   position: relative;
 }
 
-.table td::after {
+:has(.copy-active) td::after {
   content: "کپی کنید";
   visibility: hidden;
   width: 10rem;
@@ -98,7 +99,7 @@
   transition: opacity 0.3s;
 }
 
-.table td:not(td.no-copy):hover::after {
+:has(.copy-active) td:not(td.no-copy):hover::after {
   visibility: visible;
   opacity: 1;
 }

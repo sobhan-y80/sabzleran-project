@@ -1,6 +1,6 @@
-@import "../../../css/animation/animation.css";
-@import "../../../css/css-variable.css";
-@import "../../../css/sheared-components/header/header.css";
+@import "../animation/animation.css";
+@import "../css-variable.css";
+@import "../sheared-components/header/header.css";
 
 /* Start Style Panel */
 .panel-wrapper {

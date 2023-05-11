@@ -110,10 +110,6 @@
 
 /* Start Course Section Responsive */
 @media only screen and (max-width: 576px) {
-  .courses-header__left {
-    display: none;
-  }
-
   .course-box {
     justify-content: unset !important;
   }

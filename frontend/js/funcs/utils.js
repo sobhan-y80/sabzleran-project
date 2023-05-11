@@ -124,6 +124,17 @@ const getUrlParam = (key) => {
   return urlParams.get(key);
 };
 
+const showSelectItemInSelection = (elm, selctionTitleName) => {
+  elm.classList.add("custom-fillter__active");
+  selctionTitleName.innerHTML = elm.innerHTML;
+};
+
+const removeSelectItemInSelection = (selctionItems) => {
+  selctionItems.forEach((elm) => {
+    elm.classList.remove("custom-fillter__active");
+  });
+};
+
 export {
   mainUrl,
   showSwal,
@@ -135,6 +146,8 @@ export {
   getToken,
   isLogin,
   getUrlParam,
+  showSelectItemInSelection,
+  removeSelectItemInSelection,
 };
 
 console.log("utils.js");

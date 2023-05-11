@@ -1,4 +1,11 @@
-import { mainUrl, showCourseBox, getUrlParam } from "./funcs/utils.js";
+import {
+  mainUrl,
+  showCourseBox,
+  getUrlParam,
+  showSelectItemInSelection,
+  removeSelectItemInSelection,
+} from "./funcs/utils.js";
+import { getAllCourses } from "./funcs/shared.js";
 import { paginatedItem } from "./funcs/shared.js";
 
 const $ = document;
@@ -12,28 +19,16 @@ const courseFilteringSlection = $.querySelectorAll(
 const paginationWrapper = $.querySelector("#pagination-wrapper");
 
 // Start Function
-
-const removeActiveSelections = () => {
-  courseFilteringSlection.forEach((elm) => {
-    elm.classList.remove("custom-fillter__active");
-  });
-};
-
-const activeSelection = (elm) => {
-  elm.classList.add("custom-fillter__active");
-  filterSelectionName.innerHTML = elm.innerHTML;
-};
-
 // = Start Category Sorting Course
 
-// == Start Get Course Of Server
-const getCategoryCourses = async () => {
-  const res = await fetch(`${mainUrl}/courses`);
-  const courses = await res.json();
+// // == Start Get Course Of Server
+// const getCategoryCourses = async () => {
+//   const res = await fetch(`${mainUrl}/courses`);
+//   const courses = await res.json();
 
-  return courses;
-};
-// == Finish Get Course Of Server
+//   return courses;
+// };
+// // == Finish Get Course Of Server
 
 // == Start show Course In Dom
 const showCategoryCourses = (coursesArray) => {
@@ -81,9 +76,9 @@ const showCategoryCourses = (coursesArray) => {
 // == Finish show Course In Dom
 
 // == Start Course Soting
+
 const courseSorting = (array, filterType) => {
   let outputArray = [];
-  console.log("course Sorting Activeate");
 
   switch (filterType) {
     case "free": {
@@ -126,10 +121,10 @@ courseFilterSelectionParent.addEventListener("click", (event) => {
   let userFilteringSelection = dataset.key;
 
   if (tagElm === "LI") {
-    removeActiveSelections();
-    activeSelection(event.target);
+    removeSelectItemInSelection(courseFilteringSlection);
+    showSelectItemInSelection(event.target, filterSelectionName);
 
-    getCategoryCourses().then((courses) => {
+    getAllCourses().then((courses) => {
       showCategoryCourses(courseSorting(courses, userFilteringSelection));
     });
   }
@@ -138,7 +133,7 @@ courseFilterSelectionParent.addEventListener("click", (event) => {
 
 // = Start Show Course In Dom
 window.addEventListener("load", () => {
-  getCategoryCourses().then((courses) => {
+  getAllCourses().then((courses) => {
     showCategoryCourses(courses);
   });
 });

@@ -1,6 +1,7 @@
 // Start Click For Copy in Table
 
 const copyTableTextHandler = (tableElm) => {
+  tableElm.classList.add("copy-active");
   tableElm.addEventListener("click", (event) => {
     let elm = event.target;
     let { tagName: elmTagName, innerHTML: elmValue } = event.target;

@@ -1,0 +1,22 @@
+.login-form__box-inputs {
+  position: relative;
+  z-index: 10;
+}
+
+.custom-fillter__default {
+  background: var(--box-color);
+}
+
+.custom-fillter__dropdown {
+  width: 100%;
+  z-index: 11 !important;
+  background-color: var(--box-color);
+}
+
+.custom-fillter__dropdown:hover {
+  background-color: var(--box-color);
+}
+
+.custom-fillter__dropdown-item:hover {
+  background-color: unset !important;
+}
